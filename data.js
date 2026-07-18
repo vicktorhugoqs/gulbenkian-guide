@@ -58,7 +58,7 @@ window.GUIDE = {
   {
    "id": "lalique",
    "name": "René Lalique",
-   "intro": "Gulbenkian met Lalique in the 1890s and bought from him directly for decades — nearly 200 pieces, never resold, never worn much, kept as art. He had first refusal on major works. This room, always displayed apart and dimly lit, is the collection's signature: jewellery treated as sculpture at the exact moment (c. 1900) it briefly became avant-garde."
+   "intro": "Gulbenkian met Lalique in the 1890s and bought from him for five decades — 169 pieces, all but one acquired directly from the artist, never resold, barely worn, kept as art. This room, always displayed apart and dimly lit, is the collection's signature: jewellery treated as sculpture at the exact moment (c. 1900) it briefly became avant-garde."
   },
   {
    "id": "coins",
@@ -120,7 +120,7 @@ window.GUIDE = {
    "inv": "2433",
    "img": "img/medallion-2.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/medallion-2/",
-   "blurb": "One of eleven large gold medallions found near Aboukir, Egypt, around 1902 — among the most spectacular numismatic objects to survive antiquity. The emperor Caracalla is shown in the visual language of Alexander the Great, whom he obsessively emulated; the medallions were probably prizes or commemorations linked to the Alexander games at Beroia in Macedonia. Roman power dressing itself in Greek myth, five centuries after Alexander died. Previously owned by J. Pierpont Morgan."
+   "blurb": "From a hoard of twenty gold medallions found near Aboukir, Egypt, in 1902 — the only gold medallions to survive from the Roman period. Gulbenkian secured eleven of them. The emperor Caracalla is shown in the visual language of Alexander the Great, whom he obsessively emulated; the medallions were probably prizes or commemorations linked to the Alexander games at Beroia in Macedonia. Roman power dressing itself in Greek myth, five centuries after Alexander died. Previously owned by J. Pierpont Morgan."
   },
   {
    "id": "assyrian-low-relief",
@@ -417,7 +417,7 @@ window.GUIDE = {
    "inv": "1390",
    "img": "img/diana-2.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/diana-2/",
-   "blurb": "The technical dare of 18th-century sculpture: a life-size goddess running, in marble, balanced on one foot — weight the material barely permits. Her full nudity scandalised contemporaries; Houdon (the century's great portraitist of minds — his Voltaire, his Washington) here made instead a machine of motion and cold elegance. Made for a German duke, bought in 1784 by Catherine the Great, and prised out of the Hermitage by Gulbenkian in 1930. He kept her at the foot of his Paris staircase; the museum gives her a rotunda."
+   "blurb": "The technical dare of 18th-century sculpture: a life-size goddess running, in marble, balanced on one foot — weight the material barely permits. It was excluded from the Louvre Salon as an 'affront to modesty'; Houdon (the century's great portraitist of minds — his Voltaire, his Washington) here made instead a machine of motion and cold elegance. Commissioned as a garden sculpture for Duke Ernest II of Saxe-Gotha, bought in 1784 by Catherine the Great, and prised out of the Hermitage by Gulbenkian in 1930 for his Paris house on Avenue d'Iéna."
   },
   {
    "id": "the-wreck-of-a-transport-ship",
@@ -450,7 +450,7 @@ window.GUIDE = {
    "inv": "2361",
    "img": "img/boy-blowing-bubbles.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/boy-blowing-bubbles/",
-   "blurb": "A vanitas — bubbles as ephemeral existence — quoting Chardin's version of 1734, but drained of sentiment: dark ground, frontal pose, and the boy's complete lack of expression. That deadpan is the modernist move; the subject becomes an object of painting rather than an anecdote. The model is Léon Koëlla, Manet's stepson (probably his son), who haunts his best pictures. Bought in New York in November 1943 — Gulbenkian, in his mid-seventies, acquiring Manet mid-war."
+   "blurb": "A vanitas — bubbles as ephemeral existence — quoting Chardin's version of 1734, but drained of sentiment: dark ground, frontal pose, and the boy's complete lack of expression. That deadpan is the modernist move; the subject becomes an object of painting rather than an anecdote. The model is Léon Koëlla, Manet's stepson, who haunts his best pictures. Bought in New York in November 1943 — Gulbenkian, in his mid-seventies, acquiring Manet mid-war."
   },
   {
    "id": "portrait-of-madame-claude-monet",
@@ -494,7 +494,7 @@ window.GUIDE = {
    "inv": "1197",
    "img": "img/dragonfly-corsage-ornament.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/dragonfly-corsage-ornament/",
-   "blurb": "The most famous piece of Art Nouveau jewellery in existence: a woman emerging from — or being devoured by — a dragonfly with griffin claws, in gold, enamel, chrysoprase and diamond, wings articulated to tremble with the wearer. It stunned the 1900 Exposition Universelle, where Lalique was the fair's undisputed star. Metamorphosis, the era's obsession, worn on the body. Gulbenkian bought it directly from Lalique in 1903; it was barely ever worn. Twenty-seven centimetres of fin-de-siècle imagination, and the reason this room exists."
+   "blurb": "The most famous piece of Art Nouveau jewellery in existence: a woman emerging from — or being devoured by — a dragonfly with griffin claws, in gold, enamel, chrysoprase and diamond, wings articulated to tremble with the wearer. It stunned the 1900 Exposition Universelle, where Lalique was the fair's undisputed star. Metamorphosis, the era's obsession, worn on the body. Gulbenkian bought it directly from Lalique in 1903; it was barely ever worn. Over twenty-six centimetres of fin-de-siècle imagination, and the reason this room exists."
   },
   {
    "id": "serpents-pectoral",
@@ -505,7 +505,7 @@ window.GUIDE = {
    "inv": "1216",
    "img": "img/serpents-pectoral.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/serpents-pectoral/",
-   "blurb": "Nine serpents knotted into a single ornament, eight cascading down, one rearing at the crest — enamelled gold handled with a control that still defeats imitation. The serpent ran through Lalique's whole career, from Art Nouveau jewellery to Art Deco glass. Where the Dragonfly is theatre, this is pure structure: interlace as old as the migration-period goldsmiths, restated as 1899 Paris. Bought from Lalique in 1908. Gulbenkian called Lalique's works 'my delight'; he displayed them as sculpture and never treated them as jewellery stock."
+   "blurb": "Nine serpents knotted into a single ornament, eight cascading down, one rearing at the crest — enamelled gold handled with a control that still defeats imitation. The serpent ran through Lalique's whole career, from Art Nouveau jewellery to Art Deco glass. Where the Dragonfly is theatre, this is pure structure: interlace as old as the migration-period goldsmiths, restated as 1899 Paris. Bought from Lalique in 1908. When Lalique died in 1945, Gulbenkian wrote to his daughter: 'My admiration for his unique work never stopped growing' — a friendship of fifty years, ended in a condolence letter."
   },
   {
    "id": "peacock-pectoral",
@@ -516,7 +516,7 @@ window.GUIDE = {
    "inv": "1134",
    "img": "img/peacock-pectoral.jpg",
    "url": "https://gulbenkian.pt/museu/en/works/peacock-pectoral/",
-   "blurb": "The peacock was Art Nouveau's heraldic bird — beauty as pure display, sun and moon at once — and Lalique returned to it across his career. Here the body is blue-green enamel punctuated with opal cabochons, iridescence rendered in mineral. Gulbenkian bought it directly from the artist in 1900, the year of the Exposition: patron and artist were exact contemporaries in their prime, and the collector had negotiated first refusal on Lalique's best. Compare the Iznik peacocks and the Burne-Jones — the bird migrates across the whole collection."
+   "blurb": "The peacock was Art Nouveau's heraldic bird — beauty as pure display, sun and moon at once — and Lalique returned to it across his career. Here the body is blue-green enamel punctuated with opal cabochons, iridescence rendered in mineral. Gulbenkian bought it directly from the artist in 1900, the year of the Exposition: patron and artist were exact contemporaries in their prime, and all but one of the 169 Laliques here came straight from his workshop. Compare the Iznik peacocks and the Burne-Jones — the bird migrates across the whole collection."
   },
   {
    "id": "decadrachm-of-syracuse-coin",
