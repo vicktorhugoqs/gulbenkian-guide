@@ -1,8 +1,14 @@
-const CACHE = 'gulbenkian-guide-v3';
+const CACHE = 'gulbenkian-guide-v5';
 const ASSETS = [
  "./",
  "index.html",
  "data.js",
+ "manifest.webmanifest",
+ "favicon.png",
+ "apple-touch-icon.png",
+ "icon-192.png",
+ "icon-512.png",
+ "img/museum-plan.jpg",
  "img/310846.jpg",
  "img/assyrian-low-relief.jpg",
  "img/boy-blowing-bubbles.jpg",

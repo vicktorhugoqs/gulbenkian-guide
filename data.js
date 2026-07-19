@@ -678,16 +678,19 @@ window.GUIDE = {
   {
    "kind": "room text",
    "src": "Renaissance textiles",
+   "sec": "oldmasters",
    "text": "Italian velvet production flourished at the end of the 15th century and continued to thrive throughout the 16th. Cities such as Florence, Genoa and Venice came to dominate the trade and the production of precious textiles destined for the elite. The technical and artistic excellence of Italian workshops rivalled that of the traditional centres of Western Asia, which they eventually surpassed. Mutual influences between Italian and Ottoman production are particularly evident in the decorative motifs.\n\nTapestries stood among the great luxury goods produced during this period, benefitting from significant technical innovations. Beyond their decorative purpose, they added comfort to large interiors and were chiefly figurative, illustrating battles, mythological themes, biblical stories or historical events."
   },
   {
    "kind": "room text",
    "src": "Renaissance medals",
+   "sec": "oldmasters",
    "text": "The medal stands as one of the Renaissance’s major artistic innovations, capturing the spirit of the age with remarkable clarity. Inspired in Antiquity, this sculptural form embodies the humanist emphasis on the individual and the wish to preserve their memory. In 1438, Antonio Pisano, known as Pisanello, gave material form to this ideal in a new commemorative object. Combining image and text, the Renaissance medal shows a portrait on the obverse and, on the reverse, motifs alluding to the subject’s qualities, lineage, convictions or aspirations. Portable and easily reproduced, it became popular in Italian courts.\n\nCalouste Gulbenkian’s interest in medals stemmed from his admiration for the art of portraiture. Although a member of several medallic societies, he never considered himself a numismatist, focusing instead on the artistic quality of the pieces."
   },
   {
    "kind": "room text",
    "src": "Books and works on paper",
+   "sec": "oldmasters",
    "text": "In the mid-15th century, Gutenberg’s experiments contributed to the birth of printing. Relying primarily on paper and reproducible technologies, the printed book – often illustrated with prints – spread across Europe in the 15th and 16th centuries, gradually replacing illuminated manuscripts. This innovation fostered the development of bookbinding workshops, where morocco leather and gold tooling were used. Book-producing centres emerged, such as Venice, Lyon, Frankfurt, Basel or Paris, publishing works beyond the sphere of Christianity and Latin and reflecting a humanist, Renaissance society.\n\nAlongside luxurious editions from the 16th and 17th centuries, Gulbenkian also acquired, albeit only occasionally, drawings and prints by artists such as Dürer and Vorsterman, which are displayed in rotation due to the fragility of their materials."
   },
   {
