@@ -30,6 +30,10 @@ Object metadata (titles, dates, materials, inventory numbers, provenance) scrape
 
 Code (HTML/CSS/JS): [MIT](LICENSE). Original guide texts (intros, blurbs): CC BY 4.0. **Not covered**: object photographs and transcribed wall texts, which remain © Fundação Calouste Gulbenkian — see the scope note in [LICENSE](LICENSE). This is a free, non-profit, independent project, not affiliated with or endorsed by the FCG; rights holders may request removal of material via a [GitHub issue](https://github.com/vicktorhugoqs/gulbenkian-guide/issues).
 
+## Search engines
+
+`indexnow-ping.sh` notifies IndexNow-participating engines (Bing → Copilot/DuckDuckGo) of the three page URLs; run it after deploying content changes. The hex `*.txt` file at root is the IndexNow key and must stay deployed.
+
 ## Regenerating
 
 The scraper/generator lived in a session scratchpad; the content is all in `data.js`, which is the file to edit by hand. If images change, rebuild the `ASSETS` list in `sw.js` and bump its `CACHE` version string.
