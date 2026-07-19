@@ -580,12 +580,6 @@ window.GUIDE = {
    "text": "Calouste Gulbenkian described himself as an ‘Oriental collector’, and to him the works on display in this gallery were ‘Oriental art’. By 1910, other terms had come into fashion, such as ‘Muslim’ and ‘Muhammadan’ (modelled on ‘Christian’). However, these were considered too narrowly focused on sacred art. Eventually, scholars adopted the term ‘Islamic’ to express the idea that the arts created in regions where Islam historically predominated – from Morocco to Indonesia – shared certain intrinsic characteristics. These included a preference for portable objects and calligraphy, as well as intricate vegetal, floral and geometric designs.\n\nBecause these arts originated across a vast space, they also reflect the multiplicity of cultures, societies and even religions that flourished within it. The result is a rich diversity of artistic traditions that express human creativity – whether conveying spiritual meaning, the brilliance of poetry, or the technical mastery of ceramics, glass, textiles and the arts of the book."
   },
   {
-   "kind": "gallery label",
-   "src": "Grotesque carpet",
-   "sec": "islamic",
-   "text": "Tabriz (?), Iran, Safavid period, 16th century · Silk · Inv. T113"
-  },
-  {
    "kind": "room text",
    "src": "Iran, 1000–1500",
    "sec": "islamic",
@@ -596,12 +590,6 @@ window.GUIDE = {
    "src": "‘Portuguese’ carpet",
    "sec": "islamic",
    "text": "Khorasan (?), Iran, Safavid period, second half of the 17th century · Wool and cotton · Inv. T99\n\nThe origin of the composition of these carpets, like their provenance, has been controversial. The arrival of the Europeans, who travelled to Iran by boat, gave rise to a variety of new themes for painters and, consequently, for master weavers, as is the case with the carpets that came to be known as Portuguese carpets. At the same time, Persian literature also contained countless descriptions of sea voyages that were transposed into painting. These representations gave rise to numerous interpretations in carpets. Currently, the unanimous opinion is that these pieces were produced in Iran."
-  },
-  {
-   "kind": "case text",
-   "src": "Where are women in Islamic art?",
-   "sec": "islamic",
-   "text": "During the 19th century, Europeans p[…] of ‘Oriental’ women as enchanting an[…] these images tell other narratives fro[…] Women held important roles as cons[…] their own coinage beginning in 800 A[…] sponsoring civil and religious archite[…] the arts. Women became so powerfu[…] that a new historical category has be[…] of Women’ (c. 1533–1656). European […] similar freedoms, and, from 1850, ad[…] or ‘harem pants’, as symbols of eman[…]\n\n[The right side of the English column fell outside the photograph; […] marks each cut. The intact Portuguese column carries the sense: women held important roles as consorts and rulers, minting their own coinage from 800 AD (Zubayda bint Jafar) and sponsoring the arts and monumental civil and religious architecture; in the Ottoman period women became so powerful that a new historical category was coined, the ‘Sultanate of Women’ (c. 1533–1656); European women sought similar freedoms and from 1850 adopted ‘Turkish dress’, or ‘harem pants’, as symbols of emancipation.]"
   },
   {
    "kind": "room text",
@@ -664,12 +652,6 @@ window.GUIDE = {
    "text": "The presentation of painting begins in the gallery dedicated to the 15th–17th centuries and is organised into three principal areas. The first displays a small group of religious works, predominantly of Flemish origin. A second section presents works produced in the cities of Florence and Venice. This section features religious paintings from the Renaissance, the highlights being works by Cima da Conegliano, Vittore Carpaccio, Domenico Ghirlandaio and Giovanni Battista Moroni.\n\nPortraiture occupies a substantial part of the 17th-century paintings, where some of the collection’s most celebrated works can be found, including the Portrait of Helena Fourment, by Peter Paul Rubens, and Old Man with a Stick, by Rembrandt, both formerly in the collection of Catherine II of Russia."
   },
   {
-   "kind": "gallery label",
-   "src": "Virgin and Child",
-   "sec": "oldmasters",
-   "text": "Circle of Jan Gossaert, called Mabuse (c. 1478–1536) · Flanders, c. 1508–10 · Oil on wood · Inv. 275"
-  },
-  {
    "kind": "room text",
    "src": "Europe, 15th–17th centuries",
    "sec": "oldmasters",
@@ -728,18 +710,6 @@ window.GUIDE = {
    "src": "Books and works on paper (18th century)",
    "sec": "french18",
    "text": "Calouste Gulbenkian greatly admired the so-called ‘century of the perfect book’ and acquired more than a hundred volumes produced in the 18th century, mostly printed in France. He was particularly interested in the quality of the illustrations – often etched and engraved after drawings by renowned artists – and in the excellence of the bindings, frequently the result of prestigious commissions. He collected from large-format books of festivities to the more portable almanacs, including literary works by authors of Antiquity, such as Longus or Phaedrus, as well as writers of the Grand Siècle, like La Fontaine, Corneille or Molière.\n\nWatercolours, drawings and prints from this century – especially French and English – also attracted the collector’s interest. These works, like the books themselves, are displayed in rotation, given the fragility of their materials."
-  },
-  {
-   "kind": "gallery label",
-   "src": "Herm of the Vestal Tuccia",
-   "sec": "cent18",
-   "text": "Antonio Canova (1757–1822) · Rome, 1818 · Marble · Inv. 2214"
-  },
-  {
-   "kind": "gallery label",
-   "src": "Statuette of a Child",
-   "sec": "cent18",
-   "text": "Jean-Baptiste Pigalle (1714–1785) · Paris, before 1779 · Marble · Inv. 249"
   },
   {
    "kind": "room text",

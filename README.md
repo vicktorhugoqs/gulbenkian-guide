@@ -26,6 +26,10 @@ sw.js        precache service worker (regenerate if img/ changes)
 
 Object metadata (titles, dates, materials, inventory numbers, provenance) scraped from the museum's own works catalogue at `gulbenkian.pt/museu/en/works/`; each card links to its official page. Blurb texts written for this guide, informed by the museum's catalogue entries. **Object photographs © Fundação Calouste Gulbenkian** — included here at thumbnail size for personal, non-commercial visit use; not affiliated with or endorsed by the FCG. Wall, case and label texts in "From the walls" **© FCG**, transcribed verbatim (English column) from the visitor's own photographs of the in-gallery panels, 18 Jul 2026.
 
+## License
+
+Code (HTML/CSS/JS): [MIT](LICENSE). Original guide texts (intros, blurbs): CC BY 4.0. **Not covered**: object photographs and transcribed wall texts, which remain © Fundação Calouste Gulbenkian — see the scope note in [LICENSE](LICENSE). This is a free, non-profit, independent project, not affiliated with or endorsed by the FCG; rights holders may request removal of material via a [GitHub issue](https://github.com/vicktorhugoqs/gulbenkian-guide/issues).
+
 ## Regenerating
 
 The scraper/generator lived in a session scratchpad; the content is all in `data.js`, which is the file to edit by hand. If images change, rebuild the `ASSETS` list in `sw.js` and bump its `CACHE` version string.

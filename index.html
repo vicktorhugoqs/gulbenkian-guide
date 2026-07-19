@@ -7,7 +7,39 @@
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
-<title>Gulbenkian — Founder's Collection Guide</title>
+<title>Gulbenkian Museum Guide — Founder's Collection Highlights (Lisbon)</title>
+<meta name="description" content="Free offline guide to the Calouste Gulbenkian Museum, Lisbon: 42 highlights of the Founder's Collection in visit order, from ancient Egypt to Lalique. Non-profit, open source.">
+<link rel="canonical" href="https://vicktorhugoqs.github.io/gulbenkian-guide/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Gulbenkian Museum Guide — Founder's Collection Highlights">
+<meta property="og:description" content="A free, offline-capable field guide to the Calouste Gulbenkian Museum in Lisbon: 42 highlight works in circuit order, with the stories behind them.">
+<meta property="og:url" content="https://vicktorhugoqs.github.io/gulbenkian-guide/">
+<meta property="og:image" content="https://vicktorhugoqs.github.io/gulbenkian-guide/img/dragonfly-corsage-ornament.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Gulbenkian Museum Guide — Founder's Collection Highlights",
+  "url": "https://vicktorhugoqs.github.io/gulbenkian-guide/",
+  "description": "A free, non-profit, open-source visitor guide to the Founder's Collection of the Calouste Gulbenkian Museum in Lisbon: 42 highlight works in circuit order.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "about": {
+    "@type": "TouristAttraction",
+    "name": "Calouste Gulbenkian Museum",
+    "alternateName": "Museu Calouste Gulbenkian",
+    "url": "https://gulbenkian.pt/museu/en/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de Berna 45A",
+      "addressLocality": "Lisbon",
+      "postalCode": "1067-001",
+      "addressCountry": "PT"
+    }
+  }
+}
+</script>
 <style>
 :root{
   --bg:#ffffff; --surface:#f8f6f5; --ink:#000000; --ink2:#635d5c; --ink3:#87857d;
@@ -50,6 +82,14 @@ nav.chips::-webkit-scrollbar{display:none}
 .chip small{color:var(--ink3)}
 
 main{max-width:42rem; margin:0 auto; padding:0 .9rem}
+
+.notice{
+  background:var(--surface); border:1px solid var(--line); border-left:2px solid var(--ink);
+  margin:.9rem 0 0; padding:.55rem .8rem;
+  font-size:.74rem; line-height:1.5; color:var(--ink2);
+}
+.notice b{color:var(--ink)}
+.notice a{color:var(--ink)}
 
 .hero{padding:1.4rem 0 .4rem}
 .hero h2{font-size:1.6rem; margin-bottom:.6rem}
@@ -155,6 +195,7 @@ footer{
 </header>
 
 <main>
+  <p class="notice"><b>Free, non-profit &amp; open-source.</b> An independent visitor guide — not affiliated with, or endorsed by, the Fundação Calouste Gulbenkian. Object images and wall texts © FCG. Texts may contain errors; the museum's own labels and <a href="https://gulbenkian.pt/museu/en/">gulbenkian.pt</a> are authoritative. <a href="https://github.com/vicktorhugoqs/gulbenkian-guide">Source on GitHub</a>.</p>
   <div class="hero">
     <h2>A field guide, reopening day</h2>
     <p>The Founder's Collection reopens <b>18 July 2026</b> after a 16-month renovation, in the Foundation's 70th year. New: a numismatics room, restored daylight and garden views from the galleries. Expect crowds — the route below follows the museum's own circuit, from ancient Egypt to Lalique, through 42 works with reasons to care about each.</p>
@@ -192,7 +233,8 @@ footer{
 <button id="nextbtn" title="Scroll to next unseen work">Next unseen ↓</button>
 
 <footer>
-  <p>Personal visit guide, built 18 Jul 2026. Texts written for this guide, drawing on the museum's own catalogue entries; object photographs © Fundação Calouste Gulbenkian, from <a href="https://gulbenkian.pt/museu/en/works/">gulbenkian.pt</a> — each work links to its official page. "From the walls" texts © FCG, transcribed from photographs of the in-gallery panels taken on the reopening-night visit. Site icon: the FCG "G" — Gulbenkian's monogram drawn from the quadriga of the Syracuse decadrachm, a coin in this very collection. Not affiliated with the FCG. <span id="resetlink">Reset progress</span></p>
+  <p>Personal visit guide, built 18 Jul 2026. Texts written for this guide, drawing on the museum's own catalogue entries; object photographs © Fundação Calouste Gulbenkian, from <a href="https://gulbenkian.pt/museu/en/works/">gulbenkian.pt</a> — each work links to its official page. "From the walls" texts © FCG, transcribed from photographs of the in-gallery panels taken on the reopening-night visit. Site icon: the FCG "G" — Gulbenkian's monogram drawn from the quadriga of the Syracuse decadrachm, a coin in this very collection. Not affiliated with, or endorsed by, the Fundação Calouste Gulbenkian.</p>
+  <p>This guide is a free, non-profit, open-source project (<a href="https://github.com/vicktorhugoqs/gulbenkian-guide">source on GitHub</a>, MIT-licensed code) provided as is, with no guarantee of accuracy or completeness — always defer to the museum's own labels and website. All rights in the reproduced images and wall texts remain with their owners; any rights holder may request removal of material by <a href="https://github.com/vicktorhugoqs/gulbenkian-guide/issues">opening a GitHub issue</a>, and it will be honoured promptly. No personal data is collected; anonymous visit counts only. <span id="resetlink">Reset progress</span></p>
 </footer>
 
 <script src="data.js"></script>
@@ -297,5 +339,6 @@ footer{
     navigator.serviceWorker.register('sw.js');
 })();
 </script>
+<script data-goatcounter="https://gulbenkian-guide.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

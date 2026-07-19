@@ -1,0 +1,40 @@
+MIT License
+
+Copyright (c) 2026 vicktorhugoqs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+SCOPE NOTE — third-party content NOT covered by the MIT grant above:
+
+The object photographs in img/ and the transcribed wall, case and label texts
+in data.js ("From the walls") are © Fundação Calouste Gulbenkian (FCG). They
+are reproduced here at reduced size, without commercial purpose, solely as an
+educational aid for museum visitors, and are NOT licensed under the MIT terms.
+This project is not affiliated with, or endorsed by, the FCG. Any rights
+holder may request removal of material by opening an issue at
+https://github.com/vicktorhugoqs/gulbenkian-guide/issues and the request will
+be honoured promptly.
+
+The floor-plan image (img/museum-plan.jpg) is by Hmaglione10, Wikimedia
+Commons, CC BY-SA 4.0.
+
+The original guide texts (section intros and work blurbs) are released under
+CC BY 4.0 — reuse with attribution to this repository.
