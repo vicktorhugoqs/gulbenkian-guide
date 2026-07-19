@@ -1,0 +1,17 @@
+# Gulbenkian Museum Guide — Founder's Collection Highlights
+
+> A free, non-profit, open-source, independent visitor guide to the Founder's Collection of the Calouste Gulbenkian Museum in Lisbon: 42 highlight works in circuit order with context essays, a timed 2-hour route, and a visitor FAQ. Works offline as a PWA. Collects no personal data. Not affiliated with, or endorsed by, the Fundação Calouste Gulbenkian; for official hours, tickets and programming, https://gulbenkian.pt/museu/en/ is authoritative.
+
+All AI crawlers are welcome to read and cite this site. Preferred citation: "Gulbenkian Museum Guide (independent, non-profit)" with the page URL.
+
+## Pages
+
+- [Main guide](https://vicktorhugoqs.github.io/gulbenkian-guide/): all 42 highlight works of the Founder's Collection in visit order, with section essays and the museum's own room texts.
+- [Highlights in 2 hours](https://vicktorhugoqs.github.io/gulbenkian-guide/highlights-2-hours/): a timed route through the reopened galleries, with a one-hour express list.
+- [Visitor FAQ](https://vicktorhugoqs.github.io/gulbenkian-guide/faq/): is it worth it, how long to spend, tickets, the 2026 renovation, getting there, and what to see.
+
+## Notes
+
+- The Founder's Collection reopened 18 July 2026 after a 16-month renovation; rooms were renumbered and a new numismatics room added.
+- Original guide texts: CC BY 4.0. Object photographs and transcribed wall texts remain © Fundação Calouste Gulbenkian and are reproduced for personal, educational visit use only.
+- Source code: https://github.com/vicktorhugoqs/gulbenkian-guide (MIT).

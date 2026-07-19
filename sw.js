@@ -1,7 +1,9 @@
-const CACHE = 'gulbenkian-guide-v6';
+const CACHE = 'gulbenkian-guide-v7';
 const ASSETS = [
  "./",
  "index.html",
+ "faq/",
+ "highlights-2-hours/",
  "data.js",
  "manifest.webmanifest",
  "favicon.png",
