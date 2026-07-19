@@ -83,6 +83,17 @@ button.seenbtn{
 }
 article.work.seen button.seenbtn{border-color:var(--seen); color:var(--seen)}
 
+figure.wall{
+  margin:0 0 1.15rem; padding:.2rem 0 .2rem 1rem;
+  border-left:3px solid var(--line);
+}
+figure.wall blockquote p{
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:.93rem; margin-bottom:.5rem;
+}
+figure.wall figcaption{color:var(--ink2); font-size:.78rem}
+figure.wall figcaption a{color:inherit}
+
 #nextbtn{
   position:fixed; bottom:1.1rem; right:1rem; z-index:20;
   background:var(--accent); color:#fff; border:none; border-radius:999px;
@@ -125,7 +136,7 @@ footer a{color:inherit}
 <button id="nextbtn" title="Scroll to next unseen work">Next unseen ↓</button>
 
 <footer>
-  <p>Personal visit guide, built 18 Jul 2026. Texts written for this guide, drawing on the museum's own catalogue entries; object photographs © Fundação Calouste Gulbenkian, from <a href="https://gulbenkian.pt/museu/en/works/">gulbenkian.pt</a> — each work links to its official page. Not affiliated with the FCG. <span id="resetlink">Reset progress</span></p>
+  <p>Personal visit guide, built 18 Jul 2026. Texts written for this guide, drawing on the museum's own catalogue entries; object photographs © Fundação Calouste Gulbenkian, from <a href="https://gulbenkian.pt/museu/en/works/">gulbenkian.pt</a> — each work links to its official page. Gallery texts in "From the walls" © FCG, transcribed from photographs of the in-gallery panels taken on the reopening-night visit. Not affiliated with the FCG. <span id="resetlink">Reset progress</span></p>
 </footer>
 
 <script src="data.js"></script>
@@ -165,6 +176,27 @@ footer a{color:inherit}
     });
     root.appendChild(sec);
   });
+
+  if(G.walls && G.walls.length){
+    const a=document.createElement('a');
+    a.className='chip'; a.href='#s-walls';
+    a.innerHTML=(G.sections.length+1)+'. From the walls';
+    chips.appendChild(a);
+
+    const sec=document.createElement('section');
+    sec.className='gallery';
+    sec.innerHTML='<h2 id="s-walls">From the walls</h2>'+
+      '<p class="intro">The museum’s own texts, photographed on reopening night (18 July 2026) and transcribed here in circuit order — the English side of the bilingual room and case panels, verbatim; […] marks text lost at a photo’s edge. Titles link to the matching section of this guide.</p>';
+    G.walls.forEach(w=>{
+      const f=document.createElement('figure');
+      f.className='wall';
+      const src=w.sec?'<a href="#s-'+w.sec+'">'+w.src+'</a>':w.src;
+      f.innerHTML='<blockquote>'+w.text.split('\n\n').map(p=>'<p>'+p+'</p>').join('')+'</blockquote>'+
+        '<figcaption>— '+w.kind+', '+src+'</figcaption>';
+      sec.appendChild(f);
+    });
+    root.appendChild(sec);
+  }
 
   const prog=document.getElementById('progress');
   function paint(){

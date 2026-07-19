@@ -7,6 +7,7 @@ A static, offline-capable visit guide for the [Calouste Gulbenkian Museum](https
 ## What it is
 
 - 42 highlight works in circuit order, grouped into 13 sections (Egypt → Lalique → the new numismatics room), each with a short context essay and section intro.
+- A 14th section, "From the walls": the museum's own room, case and object-label texts (English side), transcribed from photographs taken on the reopening-night visit, in circuit order, each linked to the matching guide section.
 - Tap the ✓ on a card to mark it seen — progress persists in `localStorage`.
 - "Next unseen" button jumps down the route.
 - A service worker precaches everything on first load, so it works offline inside the galleries.
@@ -23,7 +24,7 @@ sw.js        precache service worker (regenerate if img/ changes)
 
 ## Sources & credit
 
-Object metadata (titles, dates, materials, inventory numbers, provenance) scraped from the museum's own works catalogue at `gulbenkian.pt/museu/en/works/`; each card links to its official page. Blurb texts written for this guide, informed by the museum's catalogue entries. **Object photographs © Fundação Calouste Gulbenkian** — included here at thumbnail size for personal, non-commercial visit use; not affiliated with or endorsed by the FCG.
+Object metadata (titles, dates, materials, inventory numbers, provenance) scraped from the museum's own works catalogue at `gulbenkian.pt/museu/en/works/`; each card links to its official page. Blurb texts written for this guide, informed by the museum's catalogue entries. **Object photographs © Fundação Calouste Gulbenkian** — included here at thumbnail size for personal, non-commercial visit use; not affiliated with or endorsed by the FCG. Wall, case and label texts in "From the walls" **© FCG**, transcribed verbatim (English column) from the visitor's own photographs of the in-gallery panels, 18 Jul 2026.
 
 ## Regenerating
 

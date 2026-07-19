@@ -529,5 +529,226 @@ window.GUIDE = {
    "url": "https://gulbenkian.pt/museu/en/works/decadrachm-of-syracuse-coin/",
    "blurb": "Among the most beautiful coins ever struck: the nymph Arethusa surrounded by dolphins on one face; on the other a quadriga at full gallop with Nike descending to crown the driver. Minted as Syracuse commemorated crushing Athens' invasion (413 BCE) — victory currency, propaganda you could spend. Greek die-engravers signed work like this as artists, because it was art. Provenance: Sir Arthur Evans, the excavator of Knossos. The new numismatics room returns Gulbenkian to his first collection — he was buying coins in Istanbul as a boy of fourteen."
   }
+ ],
+ "walls": [
+  {
+   "kind": "room text",
+   "src": "Mesopotamia, Greece and Rome",
+   "sec": "mesopotamia",
+   "text": "As a native of Istanbul – long regarded as a meeting point between Eastern and Western cultures –, Calouste Gulbenkian showed a strong interest in the civilisations that flourished on both sides of the Bosphorus.\n\nIn the late 19th century, monumental remains of Assyrian sites in Mesopotamia were revealed to European audiences, most notably the alabaster reliefs from the Palace of Nimrud and the thousands of clay tablets once thought to provide direct evidence of Biblical episodes. These discoveries resonated with Calouste Gulbenkian’s classical education, which encouraged the study and collecting of numismatics and antique gems as a gateway to the aesthetics and understanding of the ancient world.\n\nThis selection reflects the exchanges between Asia and Europe – from military encounters to shared technical and iconographic traditions – through objects chosen by a man whose education and personal convictions brought these two spheres together."
+  },
+  {
+   "kind": "room text",
+   "src": "Ancient Egypt",
+   "sec": "egypt",
+   "text": "Shaped by major archaeological discoveries throughout the 20th century, the growing taste for Egyptian art deeply influenced Calouste Gulbenkian’s collecting practices, beginning as early as 1907. His interest was nurtured through his correspondence with Howard Carter, the discoverer of Tutankhamun’s tomb in November 1922, who later became his principal advisor for acquiring Egyptian antiquities.\n\nFrom 1921 onwards, Calouste Gulbenkian set out to become a ‘foremost collector of Egyptian art’, insisting on acquiring objects of aesthetic rather than purely archaeological significance. This preference – echoed in the selection of objects displayed in this room, crafted from the finest materials – paints an exquisite image of a civilisation shaped by kings and priests. Across the vitrines, both ceremonial and funerary objects reflect the beauty of human and animal form through portraiture, offering a vision of the past that aligns with the taste of a private collector."
+  },
+  {
+   "kind": "room text",
+   "src": "Mesopotamia",
+   "sec": "mesopotamia",
+   "text": "Encompassing the territory between the Tigris and the Euphrates, Mesopotamia is traditionally defined as the core area of the Ancient Near Eastern region. Home to the first massive urban centers, which brought together thousands of people, the region witnessed the earliest development of administrative tools such as cylinder seals and clay tablets.\n\nExcavated remains captured the imagination of the elite, challenging the traditional Biblical vision of a land populated by strange beings and revealing instead a thriving iconography that served imperial propaganda. Featuring powerful protectors for a king, combining commanding presence with learned inscriptions, Calouste Gulbenkian recognised the importance of the monumental Assyrian reliefs, which evoke the ancient power of an empire that prospered from the Mediterranean to the Persian Gulf."
+  },
+  {
+   "kind": "room text",
+   "src": "Precious materials",
+   "sec": "greco",
+   "text": "Signifying status or power through their origin, rarity or the technological sophistication required to work them, ancient gems, gold and precious-stone jewellery, and finely crafted vessels were collected for many reasons. A ring set with an intaglio or an exquisite collar served as both a political and economic statement, demonstrating its owner’s ability to command precious stones and gold imported from afar, as well as the skilled artisans capable of shaping them.\n\nCollected as reflections of an exclusive taste – rooted in finely carved philosophical or literary imagery – such objects also highlighted the privileged social background and education of the elite. These qualities and symbols continued to be recognised long after their creation, whether through Neoclassical imitations or shared collecting practices."
+  },
+  {
+   "kind": "room text",
+   "src": "Classical Antiquity",
+   "sec": "greco",
+   "text": "Both born and mainly developed in the Mediterranean region, the Greek and Roman civilisations shared common values and symbolism in their artistic productions, celebrating gifted craftmanship as an asset cherished by powerful elites. Glasses, ceramics and marbles were used as media to address complex issues such as human nature and our relationship with beauty, impermanence or even death.\n\nPowerful enough to carry their symbolism through time, these objects echoed the taste of the knowledgeable 19th-century elite. Through his acquisitions, Calouste Gulbenkian engaged with this heritage, recognising in their refinement the origins of his own taste."
+  },
+  {
+   "kind": "room text",
+   "src": "Numismatics",
+   "sec": "coins",
+   "text": "‘My aim is to make a very fine collection of Greek coins, purely from an artistic point of view […] I do not want rarities if they are not splendidly preserved and artistic.’ While being recognised as one of the most important private numismatic collectors in the world, Calouste Gulbenkian never considered himself a numismatist. From his earliest collecting efforts to his last years in Lisbon, his collection mirrored his taste for beauty and its evolution through his continuous acquisitions.\n\nThese small wonders reveal an art form shared by civilisations across the ancient world, used to uphold identity or celebrate historical events. Today, they convey both a vibrant perception of their environment and a universal heritage on which later cultures were built."
+  },
+  {
+   "kind": "gallery label",
+   "src": "Jug made for Ulugh Beg (1394–1449)",
+   "sec": "islamic",
+   "text": "Samarqand, Uzbekistan, 1417–49 · White jade (nephrite) with added handle\n\nThis mashraba, or drinking vessel, has long been esteemed as a masterpiece of white jade. An inscription around its neck gives the name and titles of Ulugh Beg. Two inscriptions added later name the Mughal rulers Jahangir (r. 1605–27) and his son Shah Jahan (r. 1628–58), legitimising their rule over India as descendants of Timur the Conqueror (r. 1370–1405), through his grandson Ulugh Beg."
+  },
+  {
+   "kind": "room text",
+   "src": "Islamic World",
+   "sec": "islamic",
+   "text": "Calouste Gulbenkian described himself as an ‘Oriental collector’, and to him the works on display in this gallery were ‘Oriental art’. By 1910, other terms had come into fashion, such as ‘Muslim’ and ‘Muhammadan’ (modelled on ‘Christian’). However, these were considered too narrowly focused on sacred art. Eventually, scholars adopted the term ‘Islamic’ to express the idea that the arts created in regions where Islam historically predominated – from Morocco to Indonesia – shared certain intrinsic characteristics. These included a preference for portable objects and calligraphy, as well as intricate vegetal, floral and geometric designs.\n\nBecause these arts originated across a vast space, they also reflect the multiplicity of cultures, societies and even religions that flourished within it. The result is a rich diversity of artistic traditions that express human creativity – whether conveying spiritual meaning, the brilliance of poetry, or the technical mastery of ceramics, glass, textiles and the arts of the book."
+  },
+  {
+   "kind": "gallery label",
+   "src": "Grotesque carpet",
+   "sec": "islamic",
+   "text": "Tabriz (?), Iran, Safavid period, 16th century · Silk · Inv. T113"
+  },
+  {
+   "kind": "room text",
+   "src": "Iran, 1000–1500",
+   "sec": "islamic",
+   "text": "Under the Seljuq dynasty (1040–1157), Iran experienced stability and prosperity, which fostered artistic innovation. The city of Kashan emerged as a prolific centre for ceramics painted in the lustre technique. Metal objects inlaid with gold and silver grew in prestige, with their shapes and glittering designs influencing pottery.\n\nBy 1258, the Mongols had conquered most of West Asia, with Iran being ruled by a branch known as the Ilkhanids (1256–1353). Following the conversion of Il-Khan Mahmud Ghazan (r. 1295–1304) to Islam in 1295, the arts began to flourish again, this time in an environment of intense cultural exchange with East Asia. The two tile panels here, made in Kashan, were commissioned by ruling Mongol Ilkhans, a woman and a man."
+  },
+  {
+   "kind": "gallery label",
+   "src": "‘Portuguese’ carpet",
+   "sec": "islamic",
+   "text": "Khorasan (?), Iran, Safavid period, second half of the 17th century · Wool and cotton · Inv. T99\n\nThe origin of the composition of these carpets, like their provenance, has been controversial. The arrival of the Europeans, who travelled to Iran by boat, gave rise to a variety of new themes for painters and, consequently, for master weavers, as is the case with the carpets that came to be known as Portuguese carpets. At the same time, Persian literature also contained countless descriptions of sea voyages that were transposed into painting. These representations gave rise to numerous interpretations in carpets. Currently, the unanimous opinion is that these pieces were produced in Iran."
+  },
+  {
+   "kind": "case text",
+   "src": "Where are women in Islamic art?",
+   "sec": "islamic",
+   "text": "During the 19th century, Europeans p[…] of ‘Oriental’ women as enchanting an[…] these images tell other narratives fro[…] Women held important roles as cons[…] their own coinage beginning in 800 A[…] sponsoring civil and religious archite[…] the arts. Women became so powerfu[…] that a new historical category has be[…] of Women’ (c. 1533–1656). European […] similar freedoms, and, from 1850, ad[…] or ‘harem pants’, as symbols of eman[…]\n\n[The right side of the English column fell outside the photograph; […] marks each cut. The intact Portuguese column carries the sense: women held important roles as consorts and rulers, minting their own coinage from 800 AD (Zubayda bint Jafar) and sponsoring the arts and monumental civil and religious architecture; in the Ottoman period women became so powerful that a new historical category was coined, the ‘Sultanate of Women’ (c. 1533–1656); European women sought similar freedoms and from 1850 adopted ‘Turkish dress’, or ‘harem pants’, as symbols of emancipation.]"
+  },
+  {
+   "kind": "room text",
+   "src": "Safavid Iran",
+   "sec": "islamic",
+   "text": "The Safavid Empire, which ruled Iran from the 16th to the 18th century, distinguished itself through the remarkable artistic production fostered by the court, which used the arts as a political and religious instrument to assert Persian identity.\n\nDuring the reign of Shah Tahmasp (r. 1524–76), the art of the book flourished, with the establishment of royal workshops that produced richly illustrated manuscripts of exceptional technical and artistic quality. Under Shah Abbas I (r. 1587–1629), the Empire reached its cultural and political apogee, with Isfahan as its capital. Textile production experienced renewed momentum, stimulating the trade of silk, carpets and other textiles with Europe and contributing to the Empire’s international prestige."
+  },
+  {
+   "kind": "room text",
+   "src": "Mamluk Egypt and Syria, 1250–1500",
+   "sec": "islamic",
+   "text": "In 1250, the Ayyubid dynasty was overthrown by slave-soldiers (mamluks), who formed the Mamluk Sultanate in Cairo, ruling Egypt and Syria until 1517. These Kipchak Turks, and later Circassians, were bought as adolescents and sold to the sultan or his officers (emirs). Those who demonstrated military prowess could rise to the rank of emir, a prerequisite for being selected as sultan.\n\nSince landed wealth could not be inherited, sultans and emirs spent lavishly. The many objects bearing their names testify to their abundant patronage. Examples include the rare glass lamps in this gallery, commissioned for religious and funerary sites. The large bottles also attest to a desire to impress. Women enslaved in the sultan’s household accumulated and spent fortunes as well."
+  },
+  {
+   "kind": "room text",
+   "src": "Armenia(n)",
+   "sec": "armenia",
+   "text": "Born in Istanbul, in 1869, Calouste Gulbenkian was of Armenian origin. The Kingdom of Armenia holds a special place in early Eurasian history, for it was the first state to adopt Christianity as an official religion in 301 AD. Since then, Armenian identity has been closely tied to religion and language, giving rise to rich architectural and manuscript traditions.\n\nArmenian communities have been on the move since at least 1064, when Ani, in present-day Türkiye, fell to the Seljuk Turks. Wars, deportations and genocide have contributed to the formation of a global diaspora marked by strong social bonds and far-reaching networks, extending from India and Iran to China and Europe. Historically, Armenian merchants played key roles in the trade of raw silk, as well as silver, cloth, minerals and precious gems – the same commodities that Armenian workshops transformed into silk textiles, carpets, metalwork and ceramics, with intellectual centres producing illuminated manuscripts."
+  },
+  {
+   "kind": "room text",
+   "src": "Lacquers",
+   "sec": "fareast",
+   "text": "For the art lover that Calouste Gulbenkian was, every object was selected for its personal appeal rather than its market value, resulting in an eclectic collection of pieces, all in excellent condition.\n\nThe majority of the lacquer items were purchased in London in the first two decades of the 20th century, sourced from private collections or from the sale of the collection of Sir Trevor Lawrence (1831–1913). The objects on display, of various types and techniques, illustrate the art of lacquer in Japan from the late Edo period (1615–1868) to the early Meiji era (1868–1912)."
+  },
+  {
+   "kind": "room text",
+   "src": "China",
+   "sec": "fareast",
+   "text": "Calouste Gulbenkian’s earliest acquisitions of Chinese art were inspired by his longstanding interest in the Islamic world. Ming blue-and-white porcelains and mythical creatures such as dragons and phoenixes echoed transcultural connections with his Persian collection. Overall, he favoured striking objects in brilliant colours, a preference also reflected in his choice of polished hardstones carved with auspicious natural imagery.\n\nIn the 1920s, after purchasing a Parisian hôtel particulier at 51 Avenue d’Iéna, his attention turned to designing its interiors. He sought out luxurious furnishings, including Qing dynasty export porcelains in green, pink, yellow and black, designed to appeal to European rather than Chinese tastes. Among these acquisitions was a lacquered folding screen, another type of art commonly exported to Europe. Calouste Gulbenkian completed this collection in 1947 with the acquisition of a quintessentially Chinese object: a stem cup depicting scholars seated among bamboo, an image embodying Confucian ideals of moral wisdom and virtue."
+  },
+  {
+   "kind": "room text",
+   "src": "Japanese prints",
+   "sec": "fareast",
+   "text": "Gulbenkian’s fascination with Asian art is reflected in his acquisition of Japanese works, made more accessible in the West following Japan’s opening to international trade in the Edo period (1603–1868). The collector’s commissions resulted in some exquisite lacquerware and a selection of Japanese prints.\n\nThese prints reveal both his taste and his commitment to assembling a small collection of woodblock works (carved into wooden blocks and printed on paper) by masters including Utamaro, Hiroshige, Hokusai and Eizan. The prints he collected explore themes such as the beauty of the female figure, everyday pleasures, kabuki theatre and serene visions of nature. Taken together, they conjure the ukiyo-e floating world, a period in which popular culture thrived."
+  },
+  {
+   "kind": "room text",
+   "src": "Europe, 12th–17th centuries",
+   "sec": "medieval",
+   "text": "The European art here presented is displayed according to a chronological and geographical arrangement and includes painting, sculpture, ivories, medals and textiles.\n\nThe area devoted to illuminated manuscript books and Gothic ivories opens the presented museum itinerary, which then moves on to 15th-century Flemish painting – represented by Rogier van der Weyden – and to 15th and 16th-century Italian painting, where Venetian and Florentine Renaissance production is particularly relevant. Small-scale religious sculpture from the regions of Paris, Troyes, and Upper Swabia punctuates the gallery. The section concludes with Northern European painting, represented by two of its most important figures: Peter Paul Rubens and Rembrandt. As with portraiture, Dutch Golden Age landscape painting is also represented, with two works by Jacob van Ruisdael."
+  },
+  {
+   "kind": "room text",
+   "src": "Illuminated manuscripts",
+   "sec": "medieval",
+   "text": "In his search for richly illuminated or finely calligraphed manuscripts, Calouste Gulbenkian assembled a small but valuable group of 24 books, 1 incunabulum and 16 loose European folios. These specimens, originating from major bibliophiles’ collections, were acquired between 1919 and 1937, mainly on the book markets of London and Paris.\n\nProduced between the 12th and 16th centuries in England, Netherlands, Flanders, Italy, and above all France, these works fall into various categories, ranging from biblical and liturgical books to texts of a literary, legal or devotional nature, with a particular emphasis on books of hours. The fragility of the materials used in these manuscripts – richly painted on parchment, incorporating gold, and occasionally preserving their original bindings – means that this collection is displayed in rotation."
+  },
+  {
+   "kind": "room text",
+   "src": "Gothic ivories",
+   "sec": "medieval",
+   "text": "Throughout the Middle Ages, highly skilled craftsmen transformed elephant tusks from sub-Saharan Africa into delicate sculptures greatly valued by Europe’s elites. Closely tied to the expansion of long-distance trade routes, between 1250 and 1400, the production of these luxury objects reached its peak.\n\nParis became the main centre of production, from which Gothic ivory carving spread, reinterpreting forms and visual languages rooted in Byzantine models. Diptychs and triptychs depicting scenes from the lives of Christ and the Virgin became especially popular, their portability and narrative structure lending themselves to moments of private devotion and meditation. Attuned to this contemplative character, Calouste Gulbenkian was also drawn to the exotic nature of the material – present elsewhere in the collection – as well as to the excellence of the craftsmanship and their prestigious provenance."
+  },
+  {
+   "kind": "room text",
+   "src": "Painting and sculpture, 15th–17th centuries",
+   "sec": "oldmasters",
+   "text": "The presentation of painting begins in the gallery dedicated to the 15th–17th centuries and is organised into three principal areas. The first displays a small group of religious works, predominantly of Flemish origin. A second section presents works produced in the cities of Florence and Venice. This section features religious paintings from the Renaissance, the highlights being works by Cima da Conegliano, Vittore Carpaccio, Domenico Ghirlandaio and Giovanni Battista Moroni.\n\nPortraiture occupies a substantial part of the 17th-century paintings, where some of the collection’s most celebrated works can be found, including the Portrait of Helena Fourment, by Peter Paul Rubens, and Old Man with a Stick, by Rembrandt, both formerly in the collection of Catherine II of Russia."
+  },
+  {
+   "kind": "gallery label",
+   "src": "Virgin and Child",
+   "sec": "oldmasters",
+   "text": "Circle of Jan Gossaert, called Mabuse (c. 1478–1536) · Flanders, c. 1508–10 · Oil on wood · Inv. 275"
+  },
+  {
+   "kind": "room text",
+   "src": "Europe, 15th–17th centuries",
+   "sec": "oldmasters",
+   "text": "The Renaissance and humanist culture introduced new conceptions of beauty and power to 15th and 16th century Europe that were reinterpreted over the centuries that followed, shaping the Early Modern Period.\n\nThus, inspiration drawn from the themes and models of Greek and Roman Antiquity – together with the Christian legacy – is evident in works from this period in the Gulbenkian collection, from Italian and Flemish tapestries to printed books, as well as in Italian sculpture, ceramics and medals. Patrons – often heads of state represented through portraits, inscriptions, coats of arms or other symbols – are likewise evoked in many of these artistic achievements, as in the sculpture of Saint Martin, which bears the arms of King Francis I of France.\n\nFinally, the 15th and 16th centuries were marked by the central role of Italy – particularly Venice – in contacts between Europe and the Middle East, a connection especially evident in the textiles and Italian books from this period in the Gulbenkian collection."
+  },
+  {
+   "kind": "room text",
+   "src": "Renaissance textiles",
+   "text": "Italian velvet production flourished at the end of the 15th century and continued to thrive throughout the 16th. Cities such as Florence, Genoa and Venice came to dominate the trade and the production of precious textiles destined for the elite. The technical and artistic excellence of Italian workshops rivalled that of the traditional centres of Western Asia, which they eventually surpassed. Mutual influences between Italian and Ottoman production are particularly evident in the decorative motifs.\n\nTapestries stood among the great luxury goods produced during this period, benefitting from significant technical innovations. Beyond their decorative purpose, they added comfort to large interiors and were chiefly figurative, illustrating battles, mythological themes, biblical stories or historical events."
+  },
+  {
+   "kind": "room text",
+   "src": "Renaissance medals",
+   "text": "The medal stands as one of the Renaissance’s major artistic innovations, capturing the spirit of the age with remarkable clarity. Inspired in Antiquity, this sculptural form embodies the humanist emphasis on the individual and the wish to preserve their memory. In 1438, Antonio Pisano, known as Pisanello, gave material form to this ideal in a new commemorative object. Combining image and text, the Renaissance medal shows a portrait on the obverse and, on the reverse, motifs alluding to the subject’s qualities, lineage, convictions or aspirations. Portable and easily reproduced, it became popular in Italian courts.\n\nCalouste Gulbenkian’s interest in medals stemmed from his admiration for the art of portraiture. Although a member of several medallic societies, he never considered himself a numismatist, focusing instead on the artistic quality of the pieces."
+  },
+  {
+   "kind": "room text",
+   "src": "Books and works on paper",
+   "text": "In the mid-15th century, Gutenberg’s experiments contributed to the birth of printing. Relying primarily on paper and reproducible technologies, the printed book – often illustrated with prints – spread across Europe in the 15th and 16th centuries, gradually replacing illuminated manuscripts. This innovation fostered the development of bookbinding workshops, where morocco leather and gold tooling were used. Book-producing centres emerged, such as Venice, Lyon, Frankfurt, Basel or Paris, publishing works beyond the sphere of Christianity and Latin and reflecting a humanist, Renaissance society.\n\nAlongside luxurious editions from the 16th and 17th centuries, Gulbenkian also acquired, albeit only occasionally, drawings and prints by artists such as Dürer and Vorsterman, which are displayed in rotation due to the fragility of their materials."
+  },
+  {
+   "kind": "room text",
+   "src": "Europe, 18th century",
+   "sec": "french18",
+   "text": "The 18th century was marked by profound changes in thought and mentality. Guided by the splendour of the French court, the art of this period moved between the more ostentatious and sumptuous character of Louis XIV’s reign and the more intimate and elegant styles associated with Louis XV and Louis XVI. This evolution found its preferred stage in the royal palaces and Parisian hôtels particuliers. Within these interiors, one could observe the harmonious interplay of the arts – painting, sculpture, furniture, textiles and metalwork – and the many ways in which artists collaborated: painters’ compositions were translated into large tapestries or small luxury objects; sculptors supplied models for silversmiths; bronze and porcelain manufactories produced ornamental elements for furniture. Within this context, the marchand-merciers played a central role. Dealers in luxury goods and intermediaries between artists and clients – ‘sellers of everything, makers of nothing,’ as Diderot put it – they were, in this Age of Enlightenment, true engines of artistic creativity, driving the market and shaping taste."
+  },
+  {
+   "kind": "room text",
+   "src": "Furniture and textiles, 18th century",
+   "sec": "french18",
+   "text": "In the 18th century, French furniture reached an unprecedented level of technical and artistic refinement. The demands of a wealthy and sophisticated elite compelled cabinetmakers and ébénistes to meet new challenges, leading to the development of innovative technical and aesthetic solutions. The strict guild system, the arrival in Paris of foreign cabinetmakers with advanced technical expertise, and the introduction of new woods brought by maritime voyages were all fundamental to the extraordinary development of cabinetmaking and fine ébénisterie.\n\nTextiles likewise played a central role in 18th-century interiors. In Lyon, silk production reached its peak. This creative vitality, combined with technical advances and the influence of Italian weavers established in France, enabled the city’s silk industry to achieve an incomparable level of quality."
+  },
+  {
+   "kind": "room text",
+   "src": "Painting and sculpture, 18th century",
+   "sec": "cent18",
+   "text": "A highlight of the collection’s 18th-century French painting is the pastel Portrait of Duval de l’Épinoy by Maurice-Quentin de La Tour, presented at the Paris Salon of 1745. Portrait of Thomas Germain and His Wife by Nicolas de Largillierre and Portrait of the Duke of Richelieu by Jean-Marc Nattier attests to the diversity of the genre in the 18th century. Jean-Honoré Fragonard’s fanciful landscape The Island of Love, with Hubert Robert’s pair of views of the gardens of Versailles, likewise illustrate the vitality of French painting during this period.\n\nFrench sculpture – featuring terracotta portrait busts, much in vogue in the 18th century – finds its finest expression in Jean-Antoine Houdon’s representation of the goddess Diana, the most significant sculptural work in the collection and a masterpiece by a leading figure of French Neoclassicism."
+  },
+  {
+   "kind": "gallery label",
+   "src": "The Island of Love",
+   "sec": "cent18",
+   "text": "Jean-Honoré Fragonard (1732–1806) · France, c. 1770 · Oil on canvas · Inv. 436\n\nDescribed as ‘view of a picturesque garden’ at its first public sale in 1784, the painting was long believed to depict the park at Rambouillet. It is now believed that Fragonard did not intend to depict any specific location and that the composition – reviving the theme of the fête galante within a fictional garden – was a product of the artist’s imagination.\n\nIn a setting marked by theatricality, the transfigured landscape imposes itself as the major theme of the work. The presence of the gallant aristocracy at a party pays homage to Antoine Watteau’s work. The mysterious caves and the staircase flanked by roses – the flowers of Venus – bathed in light, reinforce the fantastical dimension of the composition."
+  },
+  {
+   "kind": "room text",
+   "src": "Gold boxes",
+   "sec": "french18",
+   "text": "The 18th century saw a flourishing of small luxury objects and a growing fascination with them. Snuffboxes (for powdered tobacco), bonbonnières and cases designed to hold sealing wax, needles and personal grooming or writing implements were among the many types that proliferated, circulating visibly in the pockets of the elites. Beyond their practical use, these objects conveyed the taste and status of their owners, functioning as fashionable accessories and preferred gifts in both diplomatic and sentimental contexts.\n\nParis was the foremost centre for stylistic and technical innovation, as well as for the manufacture and trade of such pieces. Other production centres in Germany, in Switzerland and in England also flourished, largely adopting Parisian models, though some developed their own distinctive approaches on a smaller scale."
+  },
+  {
+   "kind": "room text",
+   "src": "Books and works on paper (18th century)",
+   "sec": "french18",
+   "text": "Calouste Gulbenkian greatly admired the so-called ‘century of the perfect book’ and acquired more than a hundred volumes produced in the 18th century, mostly printed in France. He was particularly interested in the quality of the illustrations – often etched and engraved after drawings by renowned artists – and in the excellence of the bindings, frequently the result of prestigious commissions. He collected from large-format books of festivities to the more portable almanacs, including literary works by authors of Antiquity, such as Longus or Phaedrus, as well as writers of the Grand Siècle, like La Fontaine, Corneille or Molière.\n\nWatercolours, drawings and prints from this century – especially French and English – also attracted the collector’s interest. These works, like the books themselves, are displayed in rotation, given the fragility of their materials."
+  },
+  {
+   "kind": "gallery label",
+   "src": "Herm of the Vestal Tuccia",
+   "sec": "cent18",
+   "text": "Antonio Canova (1757–1822) · Rome, 1818 · Marble · Inv. 2214"
+  },
+  {
+   "kind": "gallery label",
+   "src": "Statuette of a Child",
+   "sec": "cent18",
+   "text": "Jean-Baptiste Pigalle (1714–1785) · Paris, before 1779 · Marble · Inv. 249"
+  },
+  {
+   "kind": "room text",
+   "src": "French porcelain",
+   "sec": "french18",
+   "text": "Throughout the 18th century, French porcelain played a central role both in aristocratic daily life and in interior decoration, reflecting the refined taste and social status of European elites. Beyond their use at the table, these objects stood out for their decorative function, combining formal elegance, technical innovation and rich colour.\n\nIn the second half of the 18th century, the Sèvres Manufactory reached the height of its prestige, affirming its position as one of the foremost producers of luxury porcelain. This success resulted from the combination of significant technical advances and the direct support of the French court. The patronage of Louis XV and the influence of Madame de Pompadour were crucial in establishing the manufactory’s artistic and international reputation."
+  },
+  {
+   "kind": "room text",
+   "src": "French silver",
+   "sec": "french18",
+   "text": "By the late 17th century, the dining habits and serving practices of the elites had undergone profound change. Centred on Versailles and rapidly adopted across Europe, service à la française was a method of dining in which numerous dishes were arranged on the table in an orderly manner and presented in successive stages. Silver services grew in both scale and variety, and Parisian silversmiths became the leading interpreters of these refined requirements, with their work sought after by courts from Lisbon to Saint Petersburg. Symbolically, the table functioned as a stage for display and the expression of power.\n\nThis pattern is mirrored in the 18th- and 19th-century silver that Calouste Gulbenkian assembled, selected for its authenticity, creativity, outstanding technical mastery, the renown of its makers and its notable provenance."
+  }
  ]
 };
