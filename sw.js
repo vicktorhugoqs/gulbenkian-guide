@@ -1,4 +1,4 @@
-const CACHE = 'gulbenkian-guide-v7';
+const CACHE = 'gulbenkian-guide-v8';
 const ASSETS = [
  "./",
  "index.html",
