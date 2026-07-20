@@ -75,9 +75,21 @@ header.top{
 #progress b{color:var(--seen)}
 nav.chips{
   display:flex; gap:.35rem; overflow-x:auto; margin:.55rem -0.9rem 0; padding:0 .9rem .4rem;
-  -webkit-overflow-scrolling:touch; scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
 }
-nav.chips::-webkit-scrollbar{display:none}
+/* A touch user can swipe the strip, so the scrollbar is only clutter there.
+   A mouse cannot swipe: without a visible bar the chips past the right edge
+   are unreachable, and nothing hints that they exist. */
+@media (pointer:coarse){
+  nav.chips{scrollbar-width:none}
+  nav.chips::-webkit-scrollbar{display:none}
+}
+@media (pointer:fine){
+  nav.chips{scrollbar-width:thin; scrollbar-color:var(--line) transparent; padding-bottom:.55rem}
+  nav.chips::-webkit-scrollbar{height:6px}
+  nav.chips::-webkit-scrollbar-thumb{background:var(--line)}
+  nav.chips::-webkit-scrollbar-track{background:transparent}
+}
 .chip{
   flex:0 0 auto; font-size:.66rem; text-transform:uppercase; letter-spacing:.06em;
   padding:.3rem .6rem; border:1px solid var(--line); background:var(--bg);

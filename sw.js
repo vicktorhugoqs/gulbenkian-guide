@@ -4,7 +4,7 @@
 // github.io hosts every one of this account's projects side by side.
 // The prefix is what keeps activate from evicting a neighbour's cache.
 const PREFIX = 'gulbenkian-guide-';
-const CACHE = PREFIX + '813a4c5322daa870';
+const CACHE = PREFIX + 'bebf70f3ea384ea0';
 
 // Cached during install: the guide has to be usable the moment it loads.
 const SHELL = [
