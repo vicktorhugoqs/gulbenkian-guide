@@ -10,16 +10,18 @@ A static, offline-capable visit guide for the [Calouste Gulbenkian Museum](https
 - "From the walls": the museum's own room, case and object-label texts (English side), transcribed from photographs taken on the reopening-night visit. These are embedded within the 13 sections — room panels above the works, object labels below — not held in a separate section.
 - Tap the ✓ on a card to mark it seen — progress persists in `localStorage`.
 - "Next unseen" button jumps down the route.
-- A service worker precaches everything on first load, so it works offline inside the galleries.
-- No build step, no framework, no server: `index.html` + `data.js` + `img/`.
+- Every work is in the served HTML, so the guide reads with JavaScript off and crawlers see all 42 works. JavaScript only runs the checklist and the offline download.
+- A service worker caches the page shell on first load; the 42 photographs follow in the background, and the footer reads "Ready to use offline" once they are stored. It then works offline inside the galleries.
+- No framework, no server, no dependencies — one `node build.js` and plain files.
 
 ## Structure
 
 ```
-index.html   UI (inline CSS/JS), renders from window.GUIDE
-data.js      all content: sections, works, blurbs
+index.html   the page: hand-written shell, generated work cards
+data.js      all content: sections, works, blurbs — edit this
+build.js     renders data.js into index.html, sw.js, sitemap.xml
 img/         43 images at 576px: 42 object photographs + the floor plan
-sw.js        precache service worker (regenerate if img/ changes)
+sw.js        service worker: shell precache + background image download
 ```
 
 ## Sources & credit
@@ -36,4 +38,15 @@ Code (HTML/CSS/JS): [MIT](LICENSE). Original guide texts (intros, blurbs): CC BY
 
 ## Regenerating
 
-The scraper/generator lived in a session scratchpad; the content is all in `data.js`, which is the file to edit by hand. If images change, rebuild the `ASSETS` list in `sw.js` and bump its `CACHE` version string.
+The content is all in `data.js`, which is the file to edit by hand. After any edit to it — or to `img/` — run:
+
+```
+node build.js          # writes index.html, sw.js, sitemap.xml
+node build.js --check   # exits 1 if anything is out of date
+```
+
+`build.js` needs no dependencies. It only rewrites the regions between the `BEGIN GENERATED` / `END GENERATED` markers, so everything else in those files stays hand-written and safe to edit directly. It also reads each JPEG's real dimensions so cards carry `width`/`height`, and derives the cache name from the content, so there is no `CACHE` string to bump by hand.
+
+When reviewing a content change, `git diff -- ':!index.html'` shows the human-authored side; the `index.html` hunks are derived from it.
+
+To link a work from the FAQ or the 2-hour route, `node build.js --report-links` lists each bolded name beside its likely work id — the ids are museum slugs and often do not resemble the name (Germain's tureens are `310846`, the Ulugh Beg jug is `jar`). Write the anchor by hand as `../#w-<id>`; the same command then verifies every anchor resolves.
