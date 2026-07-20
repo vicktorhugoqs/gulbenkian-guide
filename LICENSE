@@ -22,19 +22,56 @@ SOFTWARE.
 
 ---
 
-SCOPE NOTE — third-party content NOT covered by the MIT grant above:
+SCOPE NOTE — this repository contains material under four different terms.
+Read this before reusing anything. The MIT grant above covers only the first.
 
-The object photographs in img/ and the transcribed wall, case and label texts
-in data.js ("From the walls") are © Fundação Calouste Gulbenkian (FCG). They
-are reproduced here at reduced size, without commercial purpose, solely as an
-educational aid for museum visitors, and are NOT licensed under the MIT terms.
-This project is not affiliated with, or endorsed by, the FCG. Any rights
-holder may request removal of material by opening an issue at
-https://github.com/vicktorhugoqs/gulbenkian-guide/issues and the request will
-be honoured promptly.
+1. CODE — MIT (the grant above)
 
-The floor-plan image (img/museum-plan.jpg) is by Hmaglione10, Wikimedia
-Commons, CC BY-SA 4.0.
+   build.js, sw.js, and the HTML/CSS/JavaScript of the pages themselves.
 
-The original guide texts (section intros and work blurbs) are released under
-CC BY 4.0 — reuse with attribution to this repository.
+2. ORIGINAL GUIDE TEXTS — CC BY 4.0
+
+   The section intros and the work blurbs, written for this guide. Reuse with
+   attribution to this repository.
+
+3. FLOOR PLAN — CC BY-SA 4.0 (copyleft; NOT compatible with MIT)
+
+   img/museum-plan.jpg is by Hmaglione10, Wikimedia Commons, licensed
+   CC BY-SA 4.0:
+   https://commons.wikimedia.org/wiki/File:Plano_del_museo_Calouste_Gulbenkian.jpg
+
+   Share-alike applies. If you redistribute this image, or any adaptation of
+   it, you must credit Hmaglione10, state that it is CC BY-SA 4.0, and license
+   your adaptation under CC BY-SA 4.0 as well. The MIT grant above does NOT
+   extend to this file, and taking the repository under MIT does not release
+   you from the share-alike obligation on it.
+
+4. FCG MATERIAL — all rights reserved; no license granted, express or implied
+
+   The object photographs in img/ (every file except museum-plan.jpg) and the
+   transcribed wall, case and label texts in data.js ("From the walls") are
+   © Fundação Calouste Gulbenkian (FCG).
+
+   No permission to use this material has been sought from or granted by the
+   FCG. It is reproduced here on the maintainer's own assessment that the use
+   is a fair and permitted one, on these grounds:
+
+     - non-commercial: the guide is free, carries no advertising, and takes no
+       payment of any kind;
+     - educational purpose: it exists to help visitors understand objects they
+       are standing in front of, inside the museum that owns them;
+     - reduced resolution: photographs are served at 576px, well below any
+       reproduction-quality use, and are not offered for download;
+     - no substitution: the guide drives visitors to the museum and links every
+       object to its official catalogue page, rather than displacing either;
+     - attribution: the FCG is credited on every page carrying the material.
+
+   That assessment is not a license, and it has not been tested. Anyone
+   redistributing this repository is making the same judgement independently
+   and on their own responsibility. If you are reusing the code, take items 1
+   and 2 and leave img/ and the "From the walls" texts behind.
+
+   This project is not affiliated with, or endorsed by, the FCG. Any rights
+   holder may request removal of material by opening an issue at
+   https://github.com/vicktorhugoqs/gulbenkian-guide/issues and the request
+   will be honoured promptly, without argument.

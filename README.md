@@ -2,7 +2,7 @@
 
 A static, offline-capable visit guide for the [Calouste Gulbenkian Museum](https://gulbenkian.pt/museu/en/) (Lisbon), built for the collection's reopening day, 18 July 2026, after its 16-month renovation.
 
-**Live:** hosted on GitHub Pages from this repo's root.
+**Live:** hosted on GitHub Pages from this repository's root.
 
 ## What it is
 
@@ -30,7 +30,14 @@ Object metadata (titles, dates, materials, inventory numbers, provenance) scrape
 
 ## License
 
-Code (HTML/CSS/JS): [MIT](LICENSE). Original guide texts (intros, blurbs): CC BY 4.0. **Not covered**: object photographs and transcribed wall texts, which remain © Fundação Calouste Gulbenkian — see the scope note in [LICENSE](LICENSE). This is a free, non-profit, independent project, not affiliated with or endorsed by the FCG; rights holders may request removal of material via a [GitHub issue](https://github.com/vicktorhugoqs/gulbenkian-guide/issues).
+Four different terms apply — see the scope note in [LICENSE](LICENSE) before reusing anything.
+
+- **Code** (HTML/CSS/JS, `build.js`, `sw.js`): [MIT](LICENSE).
+- **Original guide texts** (section intros, work blurbs): CC BY 4.0.
+- **Floor plan** (`img/museum-plan.jpg`): CC BY-SA 4.0 by Hmaglione10 via Wikimedia Commons. Copyleft — redistributing it or an adaptation obliges you to credit, state the license, and share alike. MIT does not cover this file.
+- **Object photographs and transcribed wall texts**: © Fundação Calouste Gulbenkian, **no license granted**. Reproduced here at 576px on a non-commercial educational-use assessment that is not a license and has not been tested; the reasoning is set out in full in [LICENSE](LICENSE). If you reuse the code, leave this material behind.
+
+This is a free, non-profit, independent project, not affiliated with or endorsed by the FCG; rights holders may request removal of material via a [GitHub issue](https://github.com/vicktorhugoqs/gulbenkian-guide/issues).
 
 ## Search engines
 
@@ -40,8 +47,8 @@ Code (HTML/CSS/JS): [MIT](LICENSE). Original guide texts (intros, blurbs): CC BY
 
 The content is all in `data.js`, which is the file to edit by hand. After any edit to it — or to `img/` — run:
 
-```
-node build.js          # writes index.html, sw.js, sitemap.xml
+```bash
+node build.js           # writes index.html, faq/, highlights-2-hours/, sw.js, sitemap.xml
 node build.js --check   # exits 1 if anything is out of date
 ```
 

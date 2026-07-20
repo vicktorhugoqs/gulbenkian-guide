@@ -1,4 +1,10 @@
 window.GUIDE = {
+ "admission": {
+  "freeUntil": "2026-07-26",
+  "price": "14",
+  "checked": "2026-07-20",
+  "ticketsUrl": "https://gulbenkian.pt/en/useful-information/tickets/"
+ },
  "sections": [
   {
    "id": "egypt",
@@ -75,6 +81,7 @@ window.GUIDE = {
    "mat": "Limestone",
    "inv": "159",
    "img": "img/low-relief-depicting-princess-maritites.jpg",
+   "alt": "Pale limestone slab in shallow relief: two slender figures face a central inscribed panel, one holding lotus stems. Chipped and pitted throughout.",
    "url": "https://gulbenkian.pt/museu/en/works/low-relief-depicting-princess-maritites/",
    "blurb": "From a tomb in the shadow of the Great Pyramid: the two women flanking the royal cartouche are daughters of Princess Meritites II, herself a daughter of Khufu, the pyramid's builder. Three generations compressed into one carved block, with text and image doing a single job — the family paying respect while naming the royal grandfather. Gulbenkian bought it at the MacGregor sale at Sotheby's in July 1922, using Howard Carter as intermediary; four months later Carter was standing at the door of Tutankhamun's tomb."
   },
@@ -86,6 +93,7 @@ window.GUIDE = {
    "mat": "Obsidian",
    "inv": "138",
    "img": "img/head-of-king-senusret-iii.jpg",
+   "alt": "Small black obsidian head shown in profile, broken away above the brow and behind the ear: heavy lids, hollow cheeks, a downturned mouth.",
    "url": "https://gulbenkian.pt/museu/en/works/head-of-king-senusret-iii/",
    "blurb": "Twelve centimetres of obsidian, and one of the great portraits of antiquity. Obsidian doesn't occur in Egypt — it was imported, reserved for royal contexts, and is brutally hard to carve without shattering. What the sculptor did with it is more radical still: instead of the pharaoh's conventional eternal youth, Senusret III is shown heavy-lidded and worn, a king as administrator rather than god. This new realism defines Middle Kingdom royal art, and no piece states it more concisely. Also from the MacGregor sale of 1922."
   },
@@ -97,6 +105,7 @@ window.GUIDE = {
    "mat": "Bronze; Copper; Gold",
    "inv": "52",
    "img": "img/torso-of-king-pedubast.jpg",
+   "alt": "Corroded bronze hips and thighs on black, green-flecked, wearing a finely pleated kilt inlaid with gold hieroglyphs and a beaded gold belt.",
    "url": "https://gulbenkian.pt/museu/en/works/torso-of-king-pedubast/",
    "blurb": "A masterpiece of a politically broken era. During the Third Intermediate Period Egypt fragmented under dynasts of Libyan descent — and precisely then its bronze-casting reached a peak never surpassed. This torso of Pedubast, founder of the 23rd Dynasty, is bronze inlaid with gold and copper; look for the fine chased detail on the belt naming the king. Ex-collection of Count Gregory Stroganov, bought in Amsterdam in 1921 through Duveen, the era's most notorious dealer."
   },
@@ -108,6 +117,7 @@ window.GUIDE = {
    "mat": "Terracotta",
    "inv": "682",
    "img": "img/greek-vase.jpg",
+   "alt": "Wide black-glazed bowl on a low foot with two upswept handles. Orange figures ride a four-horse chariot above a band of dancers.",
    "url": "https://gulbenkian.pt/museu/en/works/greek-vase/",
    "blurb": "A krater is a mixing bowl — Greeks cut their wine with water, and this vessel was the centrepiece of the symposium. The upper register shows the Dioscuri, Castor and Pollux, abducting the daughters of Leucippus: a story that ends with Castor dead and the twins set among the stars as Gemini, so the party vessel carries a funerary undertow, as kraters (also used as grave markers) often did. Bought in London in July 1917, from the old Hope collection — Gulbenkian was buying calmly in the middle of the First World War."
   },
@@ -119,6 +129,7 @@ window.GUIDE = {
    "mat": "Gold",
    "inv": "2433",
    "img": "img/medallion-2.jpg",
+   "alt": "Thick gold disc with a hammered, irregular rim, struck in high relief with a helmeted bust in profile carrying a spear and a shield.",
    "url": "https://gulbenkian.pt/museu/en/works/medallion-2/",
    "blurb": "From a hoard of twenty gold medallions found near Aboukir, Egypt, in 1902 — the only gold medallions to survive from the Roman period. Gulbenkian secured eleven of them. The emperor Caracalla is shown in the visual language of Alexander the Great, whom he obsessively emulated; the medallions were probably prizes or commemorations linked to the Alexander games at Beroia in Macedonia. Roman power dressing itself in Greek myth, five centuries after Alexander died. Previously owned by J. Pierpont Morgan."
   },
@@ -130,6 +141,7 @@ window.GUIDE = {
    "mat": "Alabaster",
    "inv": "118",
    "img": "img/assyrian-low-relief.jpg",
+   "alt": "Tall mottled stone panel, cracked into four courses, carved with a winged bearded figure in a fringed robe holding a cone and a bucket.",
    "url": "https://gulbenkian.pt/museu/en/works/assyrian-low-relief/",
    "blurb": "From the walls of Ashurnasirpal II's palace at Nimrud. The winged figure is an apkallu — a 'wise one', an apotropaic spirit carved in pairs beside the king to turn away evil, here performing a purification ritual. The band of cuneiform running straight across the carving is the king's 'Standard Inscription': titles, conquests, protecting deities, repeated obsessively through the palace. Its siblings line the British Museum and the Met; Gulbenkian secured his in Paris in 1920. Stand close — the alabaster still holds fine detail in the feathers and the muscled calf."
   },
@@ -141,6 +153,7 @@ window.GUIDE = {
    "mat": "Stonepaste",
    "inv": "1567",
    "img": "img/prayer-niche.jpg",
+   "alt": "Rectangular tile panel massed with cobalt and turquoise inscriptions in raised relief, framing a pointed arch on slender columns.",
    "url": "https://gulbenkian.pt/museu/en/works/prayer-niche/",
    "blurb": "When the Mongols swept Iran in the early 1200s, Kashan — the city so associated with ceramics that Persian named tiles after it (kashi) — nearly stopped producing. This moulded tile mihrab belongs to the revival a generation later under Mongol Ilkhanid patronage: cobalt and turquoise under the glaze, copper lustre over it. At the centre hangs the lamp symbolising divine light; the Quranic inscriptions frame the niche that orients prayer toward Mecca. A wall's most important square metre, made portable."
   },
@@ -152,6 +165,7 @@ window.GUIDE = {
    "mat": "Glass",
    "inv": "1032",
    "img": "img/mosque-lamp-2.jpg",
+   "alt": "Pale glass vessel with a flaring neck and a swelling body, ringed with bold blue inscription bands. Six small handles circle the waist.",
    "url": "https://gulbenkian.pt/museu/en/works/mosque-lamp-2/",
    "blurb": "Mamluk enamelled glass was the finest glasswork on earth in its day, and lamps like this are its summit. The form is theological: the Quran's Light Verse (24:35) compares God to 'a lamp within a glass, the glass as it were a glittering star', so the object hanging in the mosque was itself a metaphor made physical. This one was made for the amir Mahmud ibn Shirwin and carries his heraldic emblem — a red fleur-de-lys. From the collection of Baron Gustave de Rothschild, bought via Duveen in 1919."
   },
@@ -163,6 +177,7 @@ window.GUIDE = {
    "mat": "Stonepaste",
    "inv": "2247",
    "img": "img/deep-plate-with-peacocks.jpg",
+   "alt": "White dish with a scalloped blue rim, painted with two long-necked birds in blue and green among red tulips and curling leaves.",
    "url": "https://gulbenkian.pt/museu/en/works/deep-plate-with-peacocks/",
    "blurb": "Iznik tiles were a state enterprise feeding the imperial mosques; Iznik plates were made by private workshops competing in the open market — which is why the best of them take risks. This one abandons the usual symmetry for a startling composition: a large peacock feeding a smaller one perched on its back. The tail colours mark both as males — so not mother and chick but plausibly father and son, an image with no real parallel in the repertoire. Ottoman ceramics at their most inventive, right at the 1570s peak of the red-and-emerald palette."
   },
@@ -174,6 +189,7 @@ window.GUIDE = {
    "mat": "Paper; Ink; Gouache; Gold",
    "inv": "LA161",
    "img": "img/miniature-from-the-anthology-of-sultan-iskandar.jpg",
+   "alt": "Open manuscript: dense Persian verse in ruled columns at the left, at the right a gold and blue tiered pavilion with small figures below.",
    "url": "https://gulbenkian.pt/museu/en/works/miniature-from-the-anthology-of-sultan-iskandar/",
    "blurb": "Commissioned by Iskandar Sultan, grandson of Timur (Tamerlane), while governor of Shiraz — a prince who poured his short life into manuscripts rather than conquest. Among its 32 miniatures is Bahram Gur and the Seven Portraits from Nizami's poem, painted in the jewel-box style that made Timurid Shiraz and Herat the standard for all later Persian, Mughal and Ottoman painting. A gift to the collection from Baron Edmond de Rothschild. Manuscript illumination is the Persian tradition's central art form; give this one the time you'd give a painting gallery."
   },
@@ -185,6 +201,7 @@ window.GUIDE = {
    "mat": "Pile\\Wool pile; Wool\\Wool weft; Wool\\Wool warp",
    "inv": "T96",
    "img": "img/dragon-carpet.jpg",
+   "alt": "Long carpet in rust red, indigo and cream, filled with a lattice of jagged palmettes and stylised beasts, inside a pale meander border.",
    "url": "https://gulbenkian.pt/museu/en/works/dragon-carpet/",
    "blurb": "Five and a half metres of wool: a 'dragon carpet', named for the highly stylised dragons locked into its geometric lattice — you have to hunt for them, which is half the pleasure. These were woven in the Caucasus, outside the court workshops, keeping an older, harder-edged design language. The personal angle: Gulbenkian's fortune began with Baku oil, and after his 1891 trip there he wrote a book on Transcaucasia at age 22. He collected Caucasian carpets his whole life — this is the collection remembering where the money came from."
   },
@@ -196,6 +213,7 @@ window.GUIDE = {
    "mat": "Jade",
    "inv": "328",
    "img": "img/jar.jpg",
+   "alt": "Squat cream-white vessel on a low foot, its handle carved as an arching dragon, an inscription band circling the neck.",
    "url": "https://gulbenkian.pt/museu/en/works/jar/",
    "blurb": "A white jade drinking vessel inscribed with the name of Ulugh Beg — Timur's grandson, ruler of Samarqand, and one of history's great astronomers. At his observatory he and sixty scholars catalogued nearly a thousand stars and measured the stellar year to within a minute of the modern value. Owning his jug is as close as a collection gets to holding the Timurid scientific renaissance in 16 centimetres. Later inscriptions added by subsequent owners track its passage through royal hands. Bought via Duveen in 1927."
   },
@@ -207,6 +225,7 @@ window.GUIDE = {
    "mat": "Paper; Leather; Gouache; Gold",
    "inv": "LA152",
    "img": "img/illuminated-bible.jpg",
+   "alt": "Open manuscript on gold ground: stacked scenes of robed figures at the left, and at the right a blue arch above Armenian script.",
    "url": "https://gulbenkian.pt/museu/en/works/illuminated-bible/",
    "blurb": "In 1605 Shah Abbas forcibly resettled hundreds of thousands of Armenians to 'New Julfa' in Iran. Khodja Nazar, one of the wealthy merchants of that displaced community, commissioned this Bible from Istanbul — order and finished book each travelling 1,800 km, a measure of how far Armenian networks reached. It opens with a double folio of the Creation facing Christ Pantocrator. For Gulbenkian, an Istanbul Armenian whose community was annihilated in 1915, this room was never just connoisseurship; he funded Armenian churches and refugees privately all his life."
   },
@@ -218,6 +237,7 @@ window.GUIDE = {
    "mat": "Porcelain",
    "inv": "534A",
    "img": "img/garniture-3.jpg",
+   "alt": "Five pale yellow porcelain vases against purple: three lidded and baluster-shaped, two flaring, all painted with blossom and green foliage.",
    "url": "https://gulbenkian.pt/museu/en/works/garniture-3/",
    "blurb": "A garniture is a matched set of vases in odd number, made in China specifically to be arranged on European mantelpieces — Chinese craft engineering itself for Western display habits. This yellow-ground (famille jaune) set alternates hexagonal jars with trumpet vases, visually stitched together by one continuous scene of pheasants, peonies and prunus. Jingdezhen, the porcelain city, could tune its output to any export market on earth; this is globalisation, c. 1700, in five vessels."
   },
@@ -229,6 +249,7 @@ window.GUIDE = {
    "mat": "Wood\\Pine wood; Lacquer\\Urushi lacquer; Paper; Wood\\Cryptomeria wood",
    "inv": "1023",
    "img": "img/coromandel-screen.jpg",
+   "alt": "Twelve-panel black lacquer screen, incised and coloured: a crowded palace terrace below, small framed scenes and roundels above.",
    "url": "https://gulbenkian.pt/museu/en/works/coromandel-screen/",
    "blurb": "Twelve panels, six metres wide: a screen of incised lacquer showing episodes of palace life, of the type Europeans called 'Coromandel' after the Indian coast through which the East India trade routed them. The technique cuts the design down through layers of lacquer into a clay ground, then fills the cavities with colour — closer to intaglio than to painting. Rarer still, this screen keeps calligraphy on its reverse. Bought through Duveen in 1920; screens like this were the most architectural objects a European collector could own from China."
   },
@@ -240,6 +261,7 @@ window.GUIDE = {
    "mat": "Wood; Lacquer",
    "inv": "1354",
    "img": "img/suzuribako-writing-box.jpg",
+   "alt": "Square lacquer lid in dull gold and silver, showing deer on rolling hills among maples, with chrysanthemums along a stream below.",
    "url": "https://gulbenkian.pt/museu/en/works/suzuribako-writing-box/",
    "blurb": "A lacquer box for inkstone, water-dropper and brushes — the desk set as high art. Deer among autumn flowers, executed in a compendium of maki-e techniques: gold relief (takamaki-e), flat sprinkled gold (hiramaki-e), cut-gold foil (kirikane) over a pear-skin ground (nashiji). Japanese lacquer rewards close viewing more per square centimetre than almost anything in the museum. Bought at Christie's in 1916 from the Trevor Lawrence collection — among Gulbenkian's earliest recorded purchases, a decade before the famous paintings."
   },
@@ -251,6 +273,7 @@ window.GUIDE = {
    "mat": "Ivory",
    "inv": "422",
    "img": "img/triptych-with-scenes-of-the-life-and-death-of-the-virgin.jpg",
+   "alt": "Three gabled ivory panels divided into arcaded tiers, crowded with small robed figures and angels, with traces of green and gilding.",
    "url": "https://gulbenkian.pt/museu/en/works/triptych-with-scenes-of-the-life-and-death-of-the-virgin/",
    "blurb": "Gothic ivory carving's golden age, at full power. The Virgin's life and Assumption unfold under cusped arches like a cathedral façade shrunk to hand scale — and that's the right way to read it: portable architecture for private devotion. The narrative follows the Golden Legend, the 13th century's bestselling compilation of saints' lives. The triptych closes on itself; it was made to travel with its owner and open like a book. Paris was the Silicon Valley of ivory at this date, exporting across all Europe."
   },
@@ -262,6 +285,7 @@ window.GUIDE = {
    "mat": "Parchment; Velvet; Gold\\Gold leaf; Tempera",
    "inv": "LA148",
    "img": "img/hours-of-margaret-of-cleves.jpg",
+   "alt": "Small open book: at the left a kneeling woman in red before an enthroned Virgin; at the right a gold initial and ivy-leaf border.",
    "url": "https://gulbenkian.pt/museu/en/works/hours-of-margaret-of-cleves/",
    "blurb": "One of the finest illuminated books of the years around 1400, made for Margaret of Cleves, wife of the Count of Holland, with eleven full-page miniatures of startling inventiveness. A Book of Hours scheduled private prayer through the day — the laity buying into monastic time-discipline as luxury. The miniatures' bold compositions anticipate what Netherlandish painting would do on panel a generation later with van Eyck. She later gave it to a convent in Alsace, as an inscription on the last folio records."
   },
@@ -273,6 +297,7 @@ window.GUIDE = {
    "mat": "Wood; Tempera; Oil",
    "inv": "79A",
    "img": "img/bust-of-saint-catherine-bust-of-saint-joseph.jpg",
+   "alt": "Panel painting of a young woman with long red hair between grey columns, a jewelled collar at her neck, a swan on water behind.",
    "url": "https://gulbenkian.pt/museu/en/works/bust-of-saint-catherine-bust-of-saint-joseph/",
    "blurb": "Two small survivors of a dismembered altarpiece whose most famous fragment, The Magdalen Reading, hangs in London's National Gallery. A drawing in Stockholm preserves the lost whole: six saints around the Virgin and Child. The richly dressed woman is probably Saint Catherine; the older man, Saint Joseph. Even at fragment scale you can see what made Rogier the most influential Netherlandish painter of his century — the porcelain finish of flesh, the gravity of downcast eyes. Bought in Amsterdam in 1923."
   },
@@ -284,6 +309,7 @@ window.GUIDE = {
    "mat": "Wood; Tempera",
    "inv": "282",
    "img": "img/portrait-of-a-young-woman.jpg",
+   "alt": "Bust-length painting on black: a young woman turned three-quarters, in a pink gown with a coral necklace and a white head-cloth.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-a-young-woman/",
    "blurb": "Quattrocento Florence in one face. The sitter resembles the women of the Sassetti family — bankers in Lorenzo de' Medici's inner circle whom Ghirlandaio frescoed in Santa Trinita — and wears Florentine fashion with a coral necklace at the throat. The three-quarter turn against a plain ground marks the moment portraiture moved past the rigid profile, just before landscape backgrounds arrived. Ghirlandaio ran the workshop where Michelangelo apprenticed; this is the visual culture that trained him. Bought in Berlin in 1929, via Duveen."
   },
@@ -295,6 +321,7 @@ window.GUIDE = {
    "mat": "Wood; Oil",
    "inv": "959",
    "img": "img/portrait-of-helena-fourment.jpg",
+   "alt": "Full-length painting of a woman in black satin and a wide plumed hat, arms folded, before a stormy sky and a low horizon.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-helena-fourment/",
    "blurb": "Rubens at 53 married the 16-year-old Helena Fourment and painted her constantly, with an intimacy that still startles. The tall narrow panel and low horizon make her monumental: black satin, ostrich-feather hat, the fabric handled with the bravura that made Rubens Europe's most envied painter. For two centuries the picture was misattributed to Van Dyck, including in Robert Walpole's collection at Houghton Hall — from which Catherine the Great bought it wholesale in 1779. Gulbenkian extracted it from the Hermitage in the Soviet sales of 1930."
   },
@@ -306,6 +333,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "1489",
    "img": "img/portrait-of-an-old-man.jpg",
+   "alt": "Dark painting of a seated bearded man in a plumed cap and heavy robe, both hands resting on a staff, lit from the left.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-an-old-man/",
    "blurb": "Probably a tronie — Dutch painting's term for a character study rather than a commissioned likeness — staged with workshop props, possibly gesturing at a biblical elder, an ambiguity Rembrandt likely cultivated for the market. What holds you is the hands and the shadowed eyes: dignity assembled almost entirely out of darkness. This is one of the two Rembrandts Gulbenkian pulled from the Hermitage in 1930, when Stalin's government quietly sold patrimony for industrial hard currency. Arguably the single greatest painting in Lisbon."
   },
@@ -317,6 +345,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "1488",
    "img": "img/pallas-athena.jpg",
+   "alt": "Dark painting of a figure in a gold helmet with red plumes, wearing a red cloak and gilded breastplate, holding a spear and shield.",
    "url": "https://gulbenkian.pt/museu/en/works/pallas-athena/",
    "blurb": "A very young warrior with Medusa on the shield and an owl on the helmet: Athena — though authorship, subject and date were argued over for a century, and current thinking sees master and pupil working together, consistent with how Rembrandt actually taught. One theory places it in a trilogy of goddesses with a Venus and a Juno. The armour is the show here: light scraped and loaded onto the helmet's relief in Rembrandt's late impasto manner. Also from the Hermitage sales, June 1930."
   },
@@ -328,6 +357,7 @@ window.GUIDE = {
    "mat": "Wood\\Oak; Wood\\Satinwood; Bronze; Wood\\Boxwood; Wood\\Ebony",
    "inv": "2368A/B",
    "img": "img/medal-cabinet-one-of-a-pair.jpg",
+   "alt": "Two matching cabinets on tall cabriole legs, veneered in figured wood and mounted with gilt bronze scrolls and a sculptural group.",
    "url": "https://gulbenkian.pt/museu/en/works/medal-cabinet-one-of-a-pair/",
    "blurb": "Furniture about collecting, made for collectors. Cressent, the most celebrated ébéniste of the Régence generation, trained as a sculptor — and it shows in the gilt-bronze mounts, where three boys operate a coin-minting press above medals of Louis XV. A medal cabinet was the Enlightenment gentleman's database: history, chronologically indexed in bronze and silver drawers. Ex-collection Baron Alphonse de Rothschild; unusually, a post-war purchase (New York, 1948) — Gulbenkian was still refining the collection in his final decade."
   },
@@ -339,6 +369,7 @@ window.GUIDE = {
    "mat": "Wood\\Oak; Wood\\Poplar; Wood\\Linden; Wood\\Purpleheart; Wood\\Walnut; Wood\\Sycamore",
    "inv": "749",
    "img": "img/mechanical-table.jpg",
+   "alt": "Low table on slender cabriole legs, veneered in trellis parquetry, with side leaves extended and a hinged panel raised at the centre.",
    "url": "https://gulbenkian.pt/museu/en/works/mechanical-table/",
    "blurb": "Oeben was the great mechanic among Parisian cabinetmakers — royal ébéniste-mécanicien, teacher of Riesener, and builder of furniture that transforms: this table converts between desk, reading stand and dressing table. The marquetry lid carries a military allegory linked to the founding of the École Militaire. French elite furniture of this decade is precision engineering wearing marquetry; Oeben died young, mid-construction of Louis XV's famous roll-top desk, which Riesener finished. From the Goldschmidt-Rothschild collection, Berlin, 1928."
   },
@@ -350,6 +381,7 @@ window.GUIDE = {
    "mat": "Wood\\Oak; Wood\\Sycamore; Wood\\Purpleheart; Wood\\Ebony; Wood\\Lemon wood; Wood\\Exo",
    "inv": "2082",
    "img": "img/rolltop.jpg",
+   "alt": "Curved cylinder desk on tapering legs, veneered in floral marquetry, edged with gilt bronze and topped by a gallery and two candelabra.",
    "url": "https://gulbenkian.pt/museu/en/works/rolltop/",
    "blurb": "Made for the Countess of Provence — Louis XVI's sister-in-law — at Versailles. The roll-top was the 18th century's privacy technology: one motion locks every paper on the desk. Riesener, Oeben's pupil and successor as royal cabinetmaker, was the perfectionist of the age; the marquetry and the sprung mechanism here are as good as the craft ever got, styled at the exact pivot from Louis XV curves to neoclassical straight lines. Bought in Frankfurt in 1931 from the Goldschmidt-Rothschild collection."
   },
@@ -361,6 +393,7 @@ window.GUIDE = {
    "mat": "Silver gilt",
    "inv": "1086A/B",
    "img": "img/310846.jpg",
+   "alt": "Two matching silver-gilt vessels on oval stands, their lids crowned with modelled figures, the bodies swelling into scrolled handles.",
    "url": "https://gulbenkian.pt/museu/en/works/310846/",
    "blurb": "Silver-gilt tureens from the service Empress Elizabeth I of Russia commissioned from Germain, sculpteur-orfèvre du Roi — closely related to the models he made for the Portuguese court, whose Germain silver survives in Lisbon's Museu de Arte Antiga; seeing both in one city is a quiet luxury. Satyrs hold up drapery handles; the lids carry full Rococo sculptural groups; the Russian imperial arms are chased on the sides. Sold off by the Soviets with the Hermitage material in 1930. Tableware as diplomacy, executed at the level of sculpture."
   },
@@ -372,6 +405,7 @@ window.GUIDE = {
    "mat": "Paper; Pastel",
    "inv": "2380",
    "img": "img/portrait-of-duval-de-lepinoy.jpg",
+   "alt": "Pastel of a seated man in a grey silk coat and white wig, turned to the viewer, a globe and an open book beside him against blue.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-duval-de-lepinoy/",
    "blurb": "Pastel at a scale pastel was never supposed to survive: nearly 1.2 metres of powdered pigment, by the medium's undisputed master. La Tour's sitters look permanently on the verge of saying something clever, and Duval de l'Épinoy — royal secretary, surrounded by the props of Enlightenment rationalism — is peak examples of it. Connoisseurs regularly rank this among the greatest pastels in existence. Gulbenkian bought it in Paris in 1943, from Baron Henri de Rothschild, in the middle of the Occupation — collecting continuing under the war's surface."
   },
@@ -383,6 +417,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "429",
    "img": "img/portrait-of-mrs-lowndes-stone.jpg",
+   "alt": "Full-length painting of a woman in a pink silk gown walking through woodland at dusk, a brown and white spaniel at her feet.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-mrs-lowndes-stone/",
    "blurb": "Almost certainly painted for Elizabeth Garth's 1775 wedding: full-length in the grand Van Dyck tradition, salmon silk moving like weather, a spaniel for fidelity, and Gainsborough's feathery landscape doing half the emotional work. English portraiture of this decade is aristocracy performing naturalness — au naturel as the highest artifice. Bought via Duveen in 1923 from the Countess of Carnarvon — the family of Carter's patron at Highclere, selling as Egyptomania peaked around them."
   },
@@ -394,6 +429,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "391",
    "img": "img/regatta-on-the-grand-canal.jpg",
+   "alt": "Wide view of a canal under a pale sky, lined with palaces and packed with small boats; crowds watch from a quay in the foreground.",
    "url": "https://gulbenkian.pt/museu/en/works/regatta-on-the-grand-canal/",
    "blurb": "Guardi took a composition Canaletto had fixed decades earlier — widely circulated through Visentini's engravings — and dissolved it: viewpoint pulled back, horizon dropped, sky doubled, the crowds reduced to flickering marks. Canaletto sells you Venice's architecture; Guardi sells you its atmosphere, and painting's future belonged to the second idea. The regatta runs from Ca' Foscari toward the Rialto. Bought at Christie's in 1919; its pair, the Feast of the Ascension, hangs nearby."
   },
@@ -405,6 +441,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "626",
    "img": "img/le-tapis-vert-2.jpg",
+   "alt": "Park scene with felled trees and workmen, a statue on a pedestal at the left, strolling figures in pale dress at the right.",
    "url": "https://gulbenkian.pt/museu/en/works/le-tapis-vert-2/",
    "blurb": "Louis XVI ordered the ageing trees of Versailles felled and replanted in 1774–76, and Hubert Robert — soon to be named designer of the king's gardens — painted the operation: classical statues standing amid stumps and workmen, Le Nôtre's absolutist geometry under maintenance. With its pair (Bosquet des Bains d'Apollon, also here), it reads now as an allegory painted 13 years early: the ancien régime cutting down its own park. From the Hermitage sales, 1929. Fitting viewing in a museum that just spent 16 months restoring its own garden dialogue."
   },
@@ -416,6 +453,7 @@ window.GUIDE = {
    "mat": "Marble",
    "inv": "1390",
    "img": "img/diana-2.jpg",
+   "alt": "Life-size white marble nude striding forward on one foot, a slim arrow held out in one hand, a bow in the other, on a round base.",
    "url": "https://gulbenkian.pt/museu/en/works/diana-2/",
    "blurb": "The technical dare of 18th-century sculpture: a life-size goddess running, in marble, balanced on one foot — weight the material barely permits. It was excluded from the Louvre Salon as an 'affront to modesty'; Houdon (the century's great portraitist of minds — his Voltaire, his Washington) here made instead a machine of motion and cold elegance. Commissioned as a garden sculpture for Duke Ernest II of Saxe-Gotha, bought in 1784 by Catherine the Great, and prised out of the Hermitage by Gulbenkian in 1930 for his Paris house on Avenue d'Iéna."
   },
@@ -427,6 +465,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "260",
    "img": "img/the-wreck-of-a-transport-ship.jpg",
+   "alt": "Storm painting: a crowded open boat pitching in green swells, sails torn, a foundering hull looming through spray behind.",
    "url": "https://gulbenkian.pt/museu/en/works/the-wreck-of-a-transport-ship/",
    "blurb": "Turner's early-career disaster series at maximum scale: masts and oars as splintering diagonals against a vortex of water, humans reduced to ballast. The old link to the loss of HMS Minotaur (1810) has been rejected — which improves the picture, freeing it from illustration into what it actually is: catastrophe as a formal principle, the Romantic sublime stated as composition. Turner will spend forty more years dissolving this into pure light. Bought from the Earl of Yarborough's collection in 1920."
   },
@@ -438,6 +477,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "273",
    "img": "img/the-mirror-of-venus.jpg",
+   "alt": "A ring of women in blue and red robes bending over a still pool, their faces reflected, before bare hills and a pale sky.",
    "url": "https://gulbenkian.pt/museu/en/works/the-mirror-of-venus/",
    "blurb": "Ten women contemplate their reflections in a pool, in a landscape borrowed from no place: Aestheticism's 'art for art's sake' as a manifesto picture — no narrative, no moral, beauty arranged in a frieze. Burne-Jones fuses Pre-Raphaelite medievalism with Botticelli, whom the movement had just rediscovered. First owner: Frederick Leyland, the shipping magnate for whom Whistler painted the Peacock Room. A picture about looking at pictures, hung in a collection assembled by the century's most obsessive looker."
   },
@@ -449,6 +489,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "2361",
    "img": "img/boy-blowing-bubbles.jpg",
+   "alt": "A boy in a pale jacket against a black ground, blowing a bubble from a straw, a blue and white bowl held in his other hand.",
    "url": "https://gulbenkian.pt/museu/en/works/boy-blowing-bubbles/",
    "blurb": "A vanitas — bubbles as ephemeral existence — quoting Chardin's version of 1734, but drained of sentiment: dark ground, frontal pose, and the boy's complete lack of expression. That deadpan is the modernist move; the subject becomes an object of painting rather than an anecdote. The model is Léon Koëlla, Manet's stepson, who haunts his best pictures. Bought in New York in November 1943 — Gulbenkian, in his mid-seventies, acquiring Manet mid-war."
   },
@@ -460,6 +501,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "2301",
    "img": "img/portrait-of-madame-claude-monet.jpg",
+   "alt": "A dark-haired woman reclining on a white sofa in a blue and grey gown, a small book in her hands, painted in loose strokes.",
    "url": "https://gulbenkian.pt/museu/en/works/portrait-of-madame-claude-monet/",
    "blurb": "Camille Monet on her sofa in Argenteuil, painted by her husband's closest ally in the year of the first Impressionist exhibition. Renoir brings plein-air light indoors: forms dissolving at unequal focus, Le Figaro in her hands, intimacy without ceremony. This is Impressionism's founding social unit — friends painting each other's households — caught at the movement's exact birth. Bought in 1937 from Michel Monet, the painter's son, through Paul Rosenberg."
   },
@@ -471,6 +513,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "451",
    "img": "img/the-break-up-of-the-ice.jpg",
+   "alt": "Winter river choked with broken ice floes under a grey sky, bare trees leaning at the right, a snow-covered village behind.",
    "url": "https://gulbenkian.pt/museu/en/works/the-break-up-of-the-ice/",
    "blurb": "January 1880: after weeks of brutal frost the Seine at Vétheuil broke up violently, and Monet — recently widowed, in the hardest winter of his life — painted the débâcle eighteen times. Restricted colour, floating slabs, devastation kept just under the surface of an apparently objective landscape. The series predicts the method of the later Grain Stacks and Cathedrals: one motif, many states. Grief processed as serial observation. Bought in New York in 1925."
   },
@@ -482,6 +525,7 @@ window.GUIDE = {
    "mat": "Canvas; Oil",
    "inv": "2307",
    "img": "img/self-portrait-or-degas-saluant.jpg",
+   "alt": "A bearded young man in a dark coat and bow tie, lifting his top hat, against a brown wall beside a grey painted landscape.",
    "url": "https://gulbenkian.pt/museu/en/works/self-portrait-or-degas-saluant/",
    "blurb": "Degas painted fifteen self-portraits in his youth and then stopped forever; this is among the last — the artist raising his hat, a gesture of greeting delivered with total detachment. The gloves salute Titian, the composition his idol Ingres, but the withheld expression is pure Degas: the painter as observer who declines to be observed. He kept it until death; it came from his niece Jeanne Fèvre in 1937. Pair it mentally with the Manet nearby — two versions of modern painting's cool stare."
   },
@@ -493,6 +537,7 @@ window.GUIDE = {
    "mat": "Chrysoprase; Enamel; Gold; Diamond; Chalcedony",
    "inv": "1197",
    "img": "img/dragonfly-corsage-ornament.jpg",
+   "alt": "Gold insect on black with a woman's torso at its head, wings of translucent blue-green enamel set with diamonds and opals.",
    "url": "https://gulbenkian.pt/museu/en/works/dragonfly-corsage-ornament/",
    "blurb": "The most famous piece of Art Nouveau jewellery in existence: a woman emerging from — or being devoured by — a dragonfly with griffin claws, in gold, enamel, chrysoprase and diamond, wings articulated to tremble with the wearer. It stunned the 1900 Exposition Universelle, where Lalique was the fair's undisputed star. Metamorphosis, the era's obsession, worn on the body. Gulbenkian bought it directly from Lalique in 1903; it was barely ever worn. Over twenty-six centimetres of fin-de-siècle imagination, and the reason this room exists."
   },
@@ -504,6 +549,7 @@ window.GUIDE = {
    "mat": "Gold; Enamel",
    "inv": "1216",
    "img": "img/serpents-pectoral.jpg",
+   "alt": "Nine gold and enamel snakes on black, coiled together at the top with jaws open, their banded bodies hanging in loops below.",
    "url": "https://gulbenkian.pt/museu/en/works/serpents-pectoral/",
    "blurb": "Nine serpents knotted into a single ornament, eight cascading down, one rearing at the crest — enamelled gold handled with a control that still defeats imitation. The serpent ran through Lalique's whole career, from Art Nouveau jewellery to Art Deco glass. Where the Dragonfly is theatre, this is pure structure: interlace as old as the migration-period goldsmiths, restated as 1899 Paris. Bought from Lalique in 1908. When Lalique died in 1945, Gulbenkian wrote to his daughter: 'My admiration for his unique work never stopped growing' — a friendship of fifty years, ended in a condolence letter."
   },
@@ -515,6 +561,7 @@ window.GUIDE = {
    "mat": "Enamel; Opal; Gold; Diamond",
    "inv": "1134",
    "img": "img/peacock-pectoral.jpg",
+   "alt": "Wide gold ornament: a pale enamelled bird at the centre, its tail sweeping into green fronds studded with opals and diamonds.",
    "url": "https://gulbenkian.pt/museu/en/works/peacock-pectoral/",
    "blurb": "The peacock was Art Nouveau's heraldic bird — beauty as pure display, sun and moon at once — and Lalique returned to it across his career. Here the body is blue-green enamel punctuated with opal cabochons, iridescence rendered in mineral. Gulbenkian bought it directly from the artist in 1900, the year of the Exposition: patron and artist were exact contemporaries in their prime, and all but one of the 169 Laliques here came straight from his workshop. Compare the Iznik peacocks and the Burne-Jones — the bird migrates across the whole collection."
   },
@@ -526,6 +573,7 @@ window.GUIDE = {
    "mat": "Silver",
    "inv": "N317",
    "img": "img/decadrachm-of-syracuse-coin.jpg",
+   "alt": "Large worn silver coin: a woman's head in profile with loose curls, wreathed in grain, four dolphins circling and Greek letters above.",
    "url": "https://gulbenkian.pt/museu/en/works/decadrachm-of-syracuse-coin/",
    "blurb": "Among the most beautiful coins ever struck: the nymph Arethusa surrounded by dolphins on one face; on the other a quadriga at full gallop with Nike descending to crown the driver. Minted as Syracuse commemorated crushing Athens' invasion (413 BCE) — victory currency, propaganda you could spend. Greek die-engravers signed work like this as artists, because it was art. Provenance: Sir Arthur Evans, the excavator of Knossos. The new numismatics room returns Gulbenkian to his first collection — he was buying coins in Istanbul as a boy of fourteen."
   }

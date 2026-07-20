@@ -40,7 +40,24 @@ function loadGuide() {
   vm.runInContext(read('data.js'), ctx, { filename: 'data.js' });
   const G = ctx.window.GUIDE;
   if (!G || !G.sections || !G.works) throw new Error('data.js did not define window.GUIDE');
+  checkAlts(G);
   return G;
+}
+
+// Alt text is the one field with no visible fallback: if it is wrong, nobody
+// sighted will notice and it ships. So it is checked on every load rather
+// than left to review. 150 is the point past which screen readers and search
+// engines start truncating.
+const ALT_MAX = 150;
+function checkAlts(G) {
+  const bad = [];
+  for (const w of G.works) {
+    if (!w.alt) bad.push(`${w.id}: no alt`);
+    else if (w.alt.length > ALT_MAX) bad.push(`${w.id}: alt is ${w.alt.length} chars (max ${ALT_MAX})`);
+    else if (!/[.!?]$/.test(w.alt)) bad.push(`${w.id}: alt does not end in a full stop`);
+    else if (w.alt.includes('\\')) bad.push(`${w.id}: alt contains a raw taxonomy separator`);
+  }
+  if (bad.length) throw new Error(`data.js alt text:\n  ${bad.join('\n  ')}`);
 }
 
 /* ------------------------------------------------------------ escaping */
@@ -114,19 +131,21 @@ function renderWallGroup(items, label, also, ind) {
 
 function renderWork(w, ind) {
   const { w: iw, h: ih } = jpegSize(p(w.img));
-  // Alt text is composed from the fields already in data.js rather than
-  // hand-written, so it stays true to the record as the data changes.
-  const alt = `${w.title} — ${w.maker}, ${w.mat}`;
+  // Alt describes the photograph. It used to be composed from title, maker
+  // and materials, which only restated the heading and caption sitting right
+  // below the image — no use to anyone who could not see it.
   const meta = `${esc(w.mat)}${w.inv ? ` · Inv. ${esc(w.inv)}` : ''}`;
   // Cards ship unseen; the runtime script applies .seen from localStorage.
   return [
     `${ind}<article class="work" id="w-${w.id}">`,
-    `${ind}<img src="${escAttr(w.img)}" width="${iw}" height="${ih}" loading="lazy" decoding="async" alt="${escAttr(alt)}">`,
+    `${ind}<img src="${escAttr(w.img)}" width="${iw}" height="${ih}" loading="lazy" decoding="async" alt="${escAttr(w.alt)}">`,
     `${ind}<div class="workbody">`,
     `${ind}  <div class="workhead"><div>`,
     `${ind}    <h3>${esc(w.title)}</h3>`,
     `${ind}    <p class="maker">${esc(w.maker)}</p>`,
-    `${ind}    <p class="meta">${meta} · <a href="${escAttr(w.url)}">museum page</a></p>`,
+    // Visible text stays short — the card is dense — so the destination is
+    // named for screen readers instead, the same trick as the button below.
+    `${ind}    <p class="meta">${meta} · <a href="${escAttr(w.url)}" aria-label="${escAttr(w.title)} on gulbenkian.pt">museum page</a></p>`,
     `${ind}  </div><button class="seenbtn" aria-label="Mark ${escAttr(w.title)} as seen" aria-pressed="false" data-id="${escAttr(w.id)}">✓</button></div>`,
     `${ind}  <p class="blurb">${esc(w.blurb)}</p>`,
     `${ind}</div>`,
@@ -157,6 +176,91 @@ function renderSections(G) {
     out.push(`  </section>`);
     return out.join('\n');
   }).join('\n');
+}
+
+/* ---------------------------------------------------------- admission */
+
+// The free-admission window is the one fact on this site with an expiry
+// date, and it was written out by hand in four places — including inside the
+// FAQ's JSON-LD, where a drifting copy is invisible until a search engine
+// quotes it. All four are rendered from data.js/admission now, and the build
+// refuses to run once the date has passed.
+
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+const fmtDate = iso => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${d} ${MONTHS[m - 1]} ${y}`;
+};
+const fmtDateShort = iso => fmtDate(iso).replace(/ (\w{3})\w* /, ' $1 ');
+
+// Phrasing differs by site on purpose — the practical box is terse, the FAQ
+// is a full answer — so each renders its own sentence from shared facts
+// rather than all four sharing one flattened string.
+function admission(G) {
+  const a = G.admission;
+  if (!a || !a.freeUntil || !a.price || !a.checked)
+    throw new Error('data.js: admission needs freeUntil, price and checked');
+
+  const until = fmtDate(a.freeUntil);
+  const checked = fmtDate(a.checked);
+  const alwaysFree = 'always free on Sundays from 14:00 and for under-18s';
+  const under30 = 'free to all exhibitions on Saturdays from 18:00 to 21:00 for under-30s';
+
+  return {
+    // index.html — the practical box.
+    index:
+      `Free admission until ${until}; after that €${a.price} all-inclusive. ` +
+      `Always ${alwaysFree.replace(/^always /, '')}. Checked ${fmtDateShort(a.checked)} — ` +
+      `<a href="${escAttr(a.ticketsUrl)}">confirm on gulbenkian.pt</a>.`,
+
+    // faq/index.html — the full answer. Only the volatile claim is emphasised;
+    // bolding the whole sentence emphasised nothing.
+    faq:
+      `Admission is <b>free until ${until}</b>, for the reopening. After that, the ` +
+      `all-inclusive ticket (Museum, CAM and temporary exhibitions) is €${a.price}. ` +
+      `Entry is ${alwaysFree}, and ${under30}. The surrounding Gulbenkian garden is ` +
+      `free and open daily. Prices change — checked ${checked}, so confirm on the ` +
+      `<a href="${escAttr(a.ticketsUrl)}">official tickets page</a>.`,
+
+    // The same answer as plain text for the FAQPage structured data. Currency
+    // is spelled out because this string gets read aloud by assistants.
+    faqJson:
+      `Admission is free until ${until}, for the reopening. After that, the ` +
+      `all-inclusive ticket (Museum, CAM and temporary exhibitions) is ${a.price} euros. ` +
+      `Entry is ${alwaysFree}, and ${under30}. The surrounding Gulbenkian garden is ` +
+      `free and open daily. Prices change — checked ${checked}, so confirm on the ` +
+      `official tickets page at gulbenkian.pt.`,
+
+    // highlights-2-hours/index.html — one clause inside a longer bullet.
+    route: `Admission is free until ${until}.`,
+  };
+}
+
+// Checked on every build, not only on --check: the failure mode is shipping a
+// page that tells visitors admission is free when it is not, and that is
+// worth refusing to build over.
+function checkNotExpired(G) {
+  const until = G.admission.freeUntil;
+  if (TODAY > until)
+    throw new Error(
+      `Free admission ended on ${fmtDate(until)} (today is ${fmtDate(TODAY)}).\n` +
+      `  The pages still advertise free entry. Rewrite the admission copy in\n` +
+      `  build.js:admission(), then update data.js/admission to match.`);
+}
+
+// The FAQ's JSON-LD cannot carry HTML comment markers — they would make the
+// JSON invalid — so its answer is located by question text instead. Each
+// question sits on its own line, and the exactly-once check is what keeps
+// this from silently matching the wrong entry, as replaceRegion does.
+function replaceJsonAnswer(src, question, text) {
+  const re = new RegExp(
+    `("name": ${JSON.stringify(question).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}, ` +
+    `"acceptedAnswer": \\{"@type": "Answer", "text": )"(?:[^"\\\\]|\\\\.)*"`, 'g');
+  const hits = src.match(re);
+  if (!hits || hits.length !== 1)
+    throw new Error(`JSON-LD answer for ${JSON.stringify(question)}: expected exactly one match, found ${hits ? hits.length : 0}`);
+  return src.replace(re, (_, head) => head + JSON.stringify(text));
 }
 
 /* ------------------------------------------------------------ regions */
@@ -242,18 +346,39 @@ const PAGES = [
 
 function build() {
   const G = loadGuide();
+  checkNotExpired(G);
+  const adm = admission(G);
   const out = {};
 
-  // index.html — chips and the full section list.
+  // index.html — chips, the full section list, and the ticket line.
   let index = read('index.html');
   index = htmlRegion(index, 'chips', renderChips(G));
   index = htmlRegion(index, 'sections', renderSections(G));
+  index = htmlRegion(index, 'admission', adm.index);
   out['index.html'] = index;
 
+  // faq/index.html — the ticket answer twice over: once as prose, once
+  // inside the FAQPage structured data, which has to say the same thing.
+  let faq = read('faq/index.html');
+  faq = htmlRegion(faq, 'admission', adm.faq);
+  faq = replaceJsonAnswer(faq, TICKETS_QUESTION, adm.faqJson);
+  out['faq/index.html'] = faq;
+
+  // highlights-2-hours/index.html — one clause of the "before you go" list.
+  let route = read('highlights-2-hours/index.html');
+  route = htmlRegion(route, 'admission', adm.route);
+  out['highlights-2-hours/index.html'] = route;
+
   // sw.js — shell list, image list, and a cache name keyed to the content
-  // so a stale cache can never outlive a deploy.
+  // so a stale cache can never outlive a deploy. All three pages are passed
+  // in from this run: hashing the stale bytes still on disk would let a
+  // visitor keep an out-of-date admission notice cached offline.
   const images = G.works.map(w => w.img).sort();
-  const hash = cacheHash([...SHELL, ...images], { 'index.html': index });
+  const hash = cacheHash([...SHELL, ...images], {
+    'index.html': index,
+    'faq/index.html': faq,
+    'highlights-2-hours/index.html': route,
+  });
   const list = a => a.map(s => `  ${JSON.stringify(s)},`).join('\n');
   let sw = read('sw.js');
   sw = jsRegion(sw, 'assets', [
@@ -294,6 +419,11 @@ function build() {
 // never rewrites the prose. What it does enforce is that every anchor
 // already written points at a work that exists.
 const SUBPAGES = ['highlights-2-hours/index.html', 'faq/index.html'];
+
+// Identifies the one FAQPage entry rendered from data.js. Matched verbatim,
+// so editing this question in faq/index.html means editing it here too — the
+// build fails loudly rather than leaving the answer unmanaged.
+const TICKETS_QUESTION = 'How much are tickets to the Gulbenkian Museum, and is it ever free?';
 const STOP = new Set(['the', 'of', 'a', 'an', 'and', 'in', 'to', 'from', 'with', 'at', 'on', 's']);
 const tokens = s => (s.toLowerCase().match(/[a-zà-ÿ0-9]+/g) || []).filter(t => !STOP.has(t));
 
@@ -306,9 +436,14 @@ function reportLinks() {
     const src = read(f);
     console.log(`\n=== ${f} ===\n`);
 
-    for (const m of src.matchAll(/<(b|i)>([^<]{4,})<\/\1>/g)) {
-      const phrase = m[2];
-      const linked = src.slice(Math.max(0, m.index - 60), m.index).includes('#w-');
+    // Two shapes: a name already wired to a work anchor, and a name merely
+    // emphasised. The route page used to bold every linked name, so matching
+    // <b>/<i> alone was enough; now that links carry their weight in CSS,
+    // an anchor is the only sign that a name is already wired up.
+    const NAMES = /<a href="[^"]*#w-[^"]*">([^<]{4,})<\/a>|<(b|i)>([^<]{4,})<\/\2>/g;
+    for (const m of src.matchAll(NAMES)) {
+      const linked = m[1] !== undefined;
+      const phrase = linked ? m[1] : m[3];
       const want = tokens(phrase);
       if (!want.length) continue;
       const ranked = G.works.map(w => {
