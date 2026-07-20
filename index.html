@@ -42,7 +42,7 @@
 </script>
 <style>
 :root{
-  --bg:#ffffff; --surface:#f8f6f5; --ink:#000000; --ink2:#635d5c; --ink3:#87857d;
+  --bg:#ffffff; --surface:#f8f6f5; --ink:#000000; --ink2:#635d5c; --ink3:#706e64;
   --line:#dbd5cd; --line2:#eae4e1; --seen:#1a7d37;
   --sans:"Futura","Futura PT","Century Gothic","Jost","URW Gothic","Segoe UI",Roboto,sans-serif;
   --serif:Georgia,"Times New Roman",serif;
@@ -181,7 +181,10 @@ footer{
   border-top:1px solid var(--ink);
   color:var(--ink2); font-size:.76rem;
 }
-#resetlink{cursor:pointer; text-decoration:underline}
+#resetlink{
+  background:none; border:none; padding:0; font:inherit; color:inherit;
+  cursor:pointer; text-decoration:underline;
+}
 </style>
 </head>
 <body>
@@ -189,7 +192,7 @@ footer{
 <header class="top">
   <div class="toprow">
     <h1>Gulbenkian · Founder's Collection</h1>
-    <span id="progress"></span>
+    <span id="progress" role="status"></span>
   </div>
   <nav class="chips" id="chips"></nav>
 </header>
@@ -198,11 +201,12 @@ footer{
   <p class="notice"><b>Free, non-profit &amp; open-source.</b> An independent visitor guide — not affiliated with, or endorsed by, the Fundação Calouste Gulbenkian. Object images and wall texts © FCG. Texts may contain errors; the museum's own labels and <a href="https://gulbenkian.pt/museu/en/">gulbenkian.pt</a> are authoritative. <a href="https://github.com/vicktorhugoqs/gulbenkian-guide">Source on GitHub</a>.</p>
   <div class="hero">
     <h2>A field guide, reopening day</h2>
-    <p>The Founder's Collection reopens <b>18 July 2026</b> after a 16-month renovation, in the Foundation's 70th year. New: a numismatics room, restored daylight and garden views from the galleries. Expect crowds — the route below follows the museum's own circuit, from ancient Egypt to Lalique, through 42 works with reasons to care about each.</p>
+    <p>The Founder's Collection reopened on <b>18 July 2026</b> after a 16-month renovation, in the Foundation's 70th year. New: a numismatics room, restored daylight and garden views from the galleries. Expect crowds while admission is free — the route below follows the museum's own circuit, from ancient Egypt to Lalique, through 42 works with reasons to care about each.</p>
     <p>One idea to carry through: Calouste Gulbenkian bought about 6,000 objects in his life and kept perhaps the world's highest ratio of masterpieces among them — "only the best". Watch the provenances: Hermitage sales, Rothschild collections, Howard Carter as a buying agent, Lalique as a personal friend.</p>
     <p>In each section, <b>From the walls</b> folds in the museum's own room panels, photographed on reopening night — tap one to read the room in the curators' voice before meeting the works.</p>
     <div class="practical">
-      <div><span class="k">Hours</span> 10:00–18:00, closed Tuesdays</div>
+      <div><span class="k">Hours</span> 10:00–18:00 · until 21:00 on Saturdays · closed Tuesdays</div>
+      <div><span class="k">Tickets</span> Free admission until 26 July 2026; after that €14 all-inclusive. Always free on Sundays from 14:00 and for under-18s. Checked 20 Jul 2026 — <a href="https://gulbenkian.pt/en/useful-information/tickets/">confirm on gulbenkian.pt</a>.</div>
       <div><span class="k">Where</span> Av. de Berna 45A · metro São Sebastião / Praça de Espanha</div>
       <div><span class="k">Route</span> Two wings: Antiquity &amp; the East, then Europe. Gardens between the Museum and CAM.</div>
       <div><span class="k">Note</span> Post-renovation room numbers are new — sections below follow circuit order, not room numbers.</div>
@@ -235,15 +239,24 @@ footer{
 
 <footer>
   <p>Personal visit guide, built 18 Jul 2026. Texts written for this guide, drawing on the museum's own catalogue entries; object photographs © Fundação Calouste Gulbenkian, from <a href="https://gulbenkian.pt/museu/en/works/">gulbenkian.pt</a> — each work links to its official page. "From the walls" texts © FCG, transcribed from photographs of the in-gallery panels taken on the reopening-night visit. Site icon: the FCG "G" — Gulbenkian's monogram drawn from the quadriga of the Syracuse decadrachm, a coin in this very collection. Not affiliated with, or endorsed by, the Fundação Calouste Gulbenkian.</p>
-  <p>This guide is a free, non-profit, open-source project (<a href="https://github.com/vicktorhugoqs/gulbenkian-guide">source on GitHub</a>, MIT-licensed code) provided as is, with no guarantee of accuracy or completeness — always defer to the museum's own labels and website. All rights in the reproduced images and wall texts remain with their owners; any rights holder may request removal of material by <a href="https://github.com/vicktorhugoqs/gulbenkian-guide/issues">opening a GitHub issue</a>, and it will be honoured promptly. No personal data is collected; anonymous visit counts only. <span id="resetlink">Reset progress</span></p>
+  <p>This guide is a free, non-profit, open-source project (<a href="https://github.com/vicktorhugoqs/gulbenkian-guide">source on GitHub</a>, MIT-licensed code) provided as is, with no guarantee of accuracy or completeness — always defer to the museum's own labels and website. All rights in the reproduced images and wall texts remain with their owners; any rights holder may request removal of material by <a href="https://github.com/vicktorhugoqs/gulbenkian-guide/issues">opening a GitHub issue</a>, and it will be honoured promptly. No personal data is collected; anonymous visit counts only. <button type="button" id="resetlink">Reset progress</button></p>
 </footer>
 
 <script src="data.js"></script>
 <script>
 (function(){
   const KEY='gulbenkian-seen';
-  let seen=new Set(JSON.parse(localStorage.getItem(KEY)||'[]'));
   const G=window.GUIDE;
+  // Read progress defensively: corrupt or stale storage must never stop the
+  // guide from rendering, and ids no longer in data.js are dropped so the
+  // counter can't exceed the work count.
+  const valid=new Set(G.works.map(w=>w.id));
+  let stored=[];
+  try{
+    const raw=JSON.parse(localStorage.getItem(KEY)||'[]');
+    if(Array.isArray(raw))stored=raw;
+  }catch(e){}
+  let seen=new Set(stored.filter(id=>valid.has(id)));
   const bySec={};
   G.works.forEach(w=>{(bySec[w.sec]=bySec[w.sec]||[]).push(w)});
   const wallsBySec={};
@@ -285,15 +298,17 @@ footer{
 
     (bySec[s.id]||[]).forEach(w=>{
       const art=document.createElement('article');
-      art.className='work'+(seen.has(w.id)?' seen':''); art.id='w-'+w.id;
+      const isSeen=seen.has(w.id), safeTitle=w.title.replace(/"/g,'&quot;');
+      art.className='work'+(isSeen?' seen':''); art.id='w-'+w.id;
       art.innerHTML=
-        '<img loading="lazy" src="'+w.img+'" alt="'+w.title.replace(/"/g,'&quot;')+'">'+
+        '<img loading="lazy" src="'+w.img+'" alt="'+safeTitle+'">'+
         '<div class="workbody">'+
           '<div class="workhead"><div>'+
             '<h3>'+w.title+'</h3>'+
             '<p class="maker">'+w.maker+'</p>'+
             '<p class="meta">'+w.mat+(w.inv?' · Inv. '+w.inv:'')+' · <a href="'+w.url+'">museum page</a></p>'+
-          '</div><button class="seenbtn" aria-label="mark seen" data-id="'+w.id+'">✓</button></div>'+
+          '</div><button class="seenbtn" aria-label="Mark '+safeTitle+' as seen" '+
+            'aria-pressed="'+isSeen+'" data-id="'+w.id+'">✓</button></div>'+
           '<p class="blurb">'+w.blurb+'</p>'+
         '</div>';
       sec.appendChild(art);
@@ -308,7 +323,9 @@ footer{
   const prog=document.getElementById('progress');
   function paint(){
     prog.innerHTML='<b>'+seen.size+'</b> / '+G.works.length+' seen';
-    localStorage.setItem(KEY,JSON.stringify([...seen]));
+    try{
+      localStorage.setItem(KEY,JSON.stringify([...seen]));
+    }catch(e){} // private mode / quota — progress just won't persist
   }
   paint();
 
@@ -318,6 +335,7 @@ footer{
     const id=b.dataset.id, art=document.getElementById('w-'+id);
     if(seen.has(id)){seen.delete(id);art.classList.remove('seen')}
     else{seen.add(id);art.classList.add('seen')}
+    b.setAttribute('aria-pressed',seen.has(id));
     paint();
   });
 
@@ -333,6 +351,7 @@ footer{
     if(!confirm('Clear all progress?'))return;
     seen.clear();
     document.querySelectorAll('article.work.seen').forEach(a=>a.classList.remove('seen'));
+    document.querySelectorAll('button.seenbtn').forEach(b=>b.setAttribute('aria-pressed','false'));
     paint();
   });
 
