@@ -1,6 +1,10 @@
 /* Asset lists and the cache name are generated — run: node build.js */
 /* BEGIN GENERATED assets */
-const CACHE = 'gulbenkian-guide-58b10dd3';
+// CacheStorage is scoped to the origin, not to this path, and
+// github.io hosts every one of this account's projects side by side.
+// The prefix is what keeps activate from evicting a neighbour's cache.
+const PREFIX = 'gulbenkian-guide-';
+const CACHE = PREFIX + 'cc487aae66df2275';
 
 // Cached during install: the guide has to be usable the moment it loads.
 const SHELL = [
@@ -77,9 +81,12 @@ self.addEventListener('install', e => {
   );
 });
 
+// Drop superseded caches, but only ones this guide made: the unfiltered
+// sweep this replaced deleted every cache on the origin, and on
+// github.io that is every other project the account publishes.
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(ks =>
-    Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))
+    Promise.all(ks.filter(k => k.startsWith(PREFIX) && k !== CACHE).map(k => caches.delete(k)))
   ).then(() => self.clients.claim()));
 });
 

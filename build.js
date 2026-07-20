@@ -203,6 +203,37 @@ const SHELL = [
   'img/museum-plan.jpg',
 ];
 
+// SHELL entries are request URLs, and three of them are directories the
+// server resolves to an index. Cache-busting has to read the file behind
+// the URL, so it needs the mapping spelled out.
+const SHELL_FILE = {
+  './': 'index.html',
+  'faq/': 'faq/index.html',
+  'highlights-2-hours/': 'highlights-2-hours/index.html',
+};
+
+// The cache name has to change whenever any cached byte changes.
+// Hashing names alone would let a FAQ edit, a reworded manifest or a
+// photograph replaced under its own filename ship to a visitor who then
+// keeps the old copy forever, because the service worker sees a cache it
+// already has. So hash the contents of every file the cache holds.
+// index.html is taken from the bytes this run is about to write, not from
+// the stale copy still on disk.
+function cacheHash(urls, pending) {
+  const h = crypto.createHash('sha256');
+  for (const url of urls) {
+    const file = SHELL_FILE[url] || url;
+    const bytes = file in pending ? Buffer.from(pending[file], 'utf8') : fs.readFileSync(p(file));
+    // Length-prefixed and delimited so no combination of renames and
+    // edits can produce the same byte stream as a different cache.
+    h.update(`${url}\0${bytes.length}\0`).update(bytes);
+  }
+  // 16 hex characters. A collision here would strand every visitor on a
+  // stale cache with no way back, and the name is never read by a human,
+  // so there is nothing to trade against the extra width.
+  return h.digest('hex').slice(0, 16);
+}
+
 const PAGES = [
   ['https://vicktorhugoqs.github.io/gulbenkian-guide/', 'index.html'],
   ['https://vicktorhugoqs.github.io/gulbenkian-guide/highlights-2-hours/', 'highlights-2-hours/index.html'],
@@ -222,13 +253,15 @@ function build() {
   // sw.js — shell list, image list, and a cache name keyed to the content
   // so a stale cache can never outlive a deploy.
   const images = G.works.map(w => w.img).sort();
-  const hash = crypto.createHash('sha256')
-    .update(index).update(SHELL.join()).update(images.join())
-    .digest('hex').slice(0, 8);
+  const hash = cacheHash([...SHELL, ...images], { 'index.html': index });
   const list = a => a.map(s => `  ${JSON.stringify(s)},`).join('\n');
   let sw = read('sw.js');
   sw = jsRegion(sw, 'assets', [
-    `const CACHE = 'gulbenkian-guide-${hash}';`,
+    `// CacheStorage is scoped to the origin, not to this path, and`,
+    `// github.io hosts every one of this account's projects side by side.`,
+    `// The prefix is what keeps activate from evicting a neighbour's cache.`,
+    `const PREFIX = 'gulbenkian-guide-';`,
+    `const CACHE = PREFIX + '${hash}';`,
     ``,
     `// Cached during install: the guide has to be usable the moment it loads.`,
     `const SHELL = [`,
