@@ -180,11 +180,9 @@ function renderSections(G) {
 
 /* ---------------------------------------------------------- admission */
 
-// The free-admission window is the one fact on this site with an expiry
-// date, and it was written out by hand in four places — including inside the
-// FAQ's JSON-LD, where a drifting copy is invisible until a search engine
-// quotes it. All four are rendered from data.js/admission now, and the build
-// refuses to run once the date has passed.
+// The ticket price was written out by hand in four places — including inside
+// the FAQ's JSON-LD, where a drifting copy is invisible until a search engine
+// quotes it. All four are rendered from data.js/admission now.
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
                 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -199,10 +197,9 @@ const fmtDateShort = iso => fmtDate(iso).replace(/ (\w{3})\w* /, ' $1 ');
 // rather than all four sharing one flattened string.
 function admission(G) {
   const a = G.admission;
-  if (!a || !a.freeUntil || !a.price || !a.checked)
-    throw new Error('data.js: admission needs freeUntil, price and checked');
+  if (!a || !a.price || !a.checked)
+    throw new Error('data.js: admission needs price and checked');
 
-  const until = fmtDate(a.freeUntil);
   const checked = fmtDate(a.checked);
   const alwaysFree = 'always free on Sundays from 14:00 and for under-18s';
   const under30 = 'free to all exhibitions on Saturdays from 18:00 to 21:00 for under-30s';
@@ -210,15 +207,14 @@ function admission(G) {
   return {
     // index.html — the practical box.
     index:
-      `Free admission until ${until}; after that €${a.price} all-inclusive. ` +
+      `€${a.price} all-inclusive. ` +
       `Always ${alwaysFree.replace(/^always /, '')}. Checked ${fmtDateShort(a.checked)} — ` +
       `<a href="${escAttr(a.ticketsUrl)}">confirm on gulbenkian.pt</a>.`,
 
     // faq/index.html — the full answer. Only the volatile claim is emphasised;
     // bolding the whole sentence emphasised nothing.
     faq:
-      `Admission is <b>free until ${until}</b>, for the reopening. After that, the ` +
-      `all-inclusive ticket (Museum, CAM and temporary exhibitions) is €${a.price}. ` +
+      `The all-inclusive ticket (Museum, CAM and temporary exhibitions) is <b>€${a.price}</b>. ` +
       `Entry is ${alwaysFree}, and ${under30}. The surrounding Gulbenkian garden is ` +
       `free and open daily. Prices change — checked ${checked}, so confirm on the ` +
       `<a href="${escAttr(a.ticketsUrl)}">official tickets page</a>.`,
@@ -226,27 +222,14 @@ function admission(G) {
     // The same answer as plain text for the FAQPage structured data. Currency
     // is spelled out because this string gets read aloud by assistants.
     faqJson:
-      `Admission is free until ${until}, for the reopening. After that, the ` +
-      `all-inclusive ticket (Museum, CAM and temporary exhibitions) is ${a.price} euros. ` +
+      `The all-inclusive ticket (Museum, CAM and temporary exhibitions) is ${a.price} euros. ` +
       `Entry is ${alwaysFree}, and ${under30}. The surrounding Gulbenkian garden is ` +
       `free and open daily. Prices change — checked ${checked}, so confirm on the ` +
       `official tickets page at gulbenkian.pt.`,
 
     // highlights-2-hours/index.html — one clause inside a longer bullet.
-    route: `Admission is free until ${until}.`,
+    route: `Admission €${a.price} all-inclusive.`,
   };
-}
-
-// Checked on every build, not only on --check: the failure mode is shipping a
-// page that tells visitors admission is free when it is not, and that is
-// worth refusing to build over.
-function checkNotExpired(G) {
-  const until = G.admission.freeUntil;
-  if (TODAY > until)
-    throw new Error(
-      `Free admission ended on ${fmtDate(until)} (today is ${fmtDate(TODAY)}).\n` +
-      `  The pages still advertise free entry. Rewrite the admission copy in\n` +
-      `  build.js:admission(), then update data.js/admission to match.`);
 }
 
 // The FAQ's JSON-LD cannot carry HTML comment markers — they would make the
@@ -346,7 +329,6 @@ const PAGES = [
 
 function build() {
   const G = loadGuide();
-  checkNotExpired(G);
   const adm = admission(G);
   const out = {};
 

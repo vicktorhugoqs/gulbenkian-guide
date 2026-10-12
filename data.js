@@ -1,8 +1,7 @@
 window.GUIDE = {
  "admission": {
-  "freeUntil": "2026-07-26",
-  "price": "14",
-  "checked": "2026-07-20",
+  "price": "18",
+  "checked": "2026-10-12",
   "ticketsUrl": "https://gulbenkian.pt/en/useful-information/tickets/"
  },
  "sections": [
